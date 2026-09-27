@@ -1,0 +1,6 @@
+# Release archives are uploaded as release assets, never committed
+*.zip
+dist/
+
+.DS_Store
+Thumbs.db
