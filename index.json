@@ -25,46 +25,46 @@
     },
     {
       "id": "cozy.pack-20",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "title": "Print Registers",
-      "tag": "cozy.pack-20-v1.0.0",
-      "archive": "cozy.pack-20-1.0.0.zip",
-      "sha256": "8b9f9d8eb5bd8ff7d914c3035201db8d3cd2f2f6ce0fcce1445ca4be8ac1e9bb",
-      "bytes": 1416126,
+      "tag": "cozy.pack-20-v1.0.1",
+      "archive": "cozy.pack-20-1.0.1.zip",
+      "sha256": "418d14cff221356a2b215e99fc6dc349509886cb18da7ddda827eaf844f8545e",
+      "bytes": 1415947,
       "layers": [
         {
           "name": "cards",
-          "archive": "cozy.pack-20-1.0.0-cards.zip",
+          "archive": "cozy.pack-20-1.0.1-cards.zip",
           "sha256": "0ad8465fc31ef91da9f7ca0394da36ad81898f0f85874389fd50083ed68d7e18",
           "bytes": 16645820
         }
       ],
       "preview": {
-        "archive": "cozy.pack-20-1.0.0-preview.zip",
-        "sha256": "03fd41f3b547337f09b754ed7f60dcae0143ba86391de2690ed7df67f0eab1ce",
-        "bytes": 303571
+        "archive": "cozy.pack-20-1.0.1-preview.zip",
+        "sha256": "42cac936f5d9b77e58e2a3a8c90fafa4ec67e176c33c4377a5b4d72ff5375b81",
+        "bytes": 303519
       }
     },
     {
       "id": "cozy.pack-21",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "title": "Paper & Pigment",
-      "tag": "cozy.pack-21-v1.0.0",
-      "archive": "cozy.pack-21-1.0.0.zip",
-      "sha256": "3a6408d69d64edec0dfb8ea89a7d31a9fcd1120ac2011827b3d04fc5bf79a83d",
-      "bytes": 760407,
+      "tag": "cozy.pack-21-v1.0.1",
+      "archive": "cozy.pack-21-1.0.1.zip",
+      "sha256": "3224b8493b1e5e2163513fe2aeb710ffe4512d322029604f833e61e403657315",
+      "bytes": 760225,
       "layers": [
         {
           "name": "cards",
-          "archive": "cozy.pack-21-1.0.0-cards.zip",
+          "archive": "cozy.pack-21-1.0.1-cards.zip",
           "sha256": "09cd98f465b279d37dd1f8ec750cf0c883c0199936a44e3ced1b3fc9e19918dc",
           "bytes": 8381250
         }
       ],
       "preview": {
-        "archive": "cozy.pack-21-1.0.0-preview.zip",
-        "sha256": "f8708bdec3e6db5b361e1af3bc5291373773e27f838b85ef164ab5698ebfd2f0",
-        "bytes": 231636
+        "archive": "cozy.pack-21-1.0.1-preview.zip",
+        "sha256": "2169762aa0b263da7be6f0e144f4bbbc87ba0c530258a86d29cdf4a3706745f5",
+        "bytes": 231581
       }
     }
   ]

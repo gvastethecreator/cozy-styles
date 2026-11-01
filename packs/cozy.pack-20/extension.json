@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "cozy.pack-20",
   "kind": "style-pack",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "studio": ">=0.0.0",
   "title": "Print Registers",
   "files": {
@@ -15,7 +15,7 @@
   "stylePack": {
     "id": "pack_20",
     "name": "Print Registers",
-    "description": "Printmaking studies defined by plate marks, ink transfer, registration and printed tone. Representative cards are available; cross-subject visual evaluation remains pending.",
+    "description": "Printmaking studies defined by plate marks, ink transfer, registration and printed tone.",
     "presetCount": 21,
     "landing": {
       "imageKeys": [

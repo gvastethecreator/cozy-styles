@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "cozy.pack-21",
   "kind": "style-pack",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "studio": ">=0.0.0",
   "title": "Paper & Pigment",
   "files": {
@@ -15,7 +15,7 @@
   "stylePack": {
     "id": "pack_21",
     "name": "Paper & Pigment",
-    "description": "Paper and pigment studies defined by surface behavior, layering and visible marks. Representative cards are available; cross-subject visual evaluation remains pending.",
+    "description": "Paper and pigment studies defined by surface behavior, layering and visible marks.",
     "presetCount": 23,
     "landing": {
       "imageKeys": [
