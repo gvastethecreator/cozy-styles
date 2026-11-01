@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "cozy.pack-21",
+  "kind": "style-pack",
+  "version": "1.0.0",
+  "studio": ">=0.0.0",
+  "title": "Paper & Pigment",
+  "files": {
+    "pack": "pack.json",
+    "runtime": "runtime.json",
+    "search": "search.json",
+    "thumbnails": "thumbnails.json",
+    "preview": "preview.json"
+  },
+  "stylePack": {
+    "id": "pack_21",
+    "name": "Paper & Pigment",
+    "description": "Paper and pigment studies defined by surface behavior, layering and visible marks. Representative cards are available; cross-subject visual evaluation remains pending.",
+    "presetCount": 23,
+    "landing": {
+      "imageKeys": [
+        "SP21-001",
+        "SP21-002",
+        "SP21-003",
+        "SP21-004",
+        "SP21-005",
+        "SP21-006"
+      ],
+      "collections": {
+        "portable_visual_studies": {
+          "presetCount": 23,
+          "imageKeys": [
+            "SP21-001",
+            "SP21-002",
+            "SP21-003",
+            "SP21-004",
+            "SP21-005",
+            "SP21-006"
+          ]
+        }
+      }
+    }
+  },
+  "assets": []
+}

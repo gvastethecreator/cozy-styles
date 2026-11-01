@@ -1,0 +1,437 @@
+{
+  "schemaVersion": 1,
+  "id": "cozy.pack-00",
+  "kind": "style-pack",
+  "version": "1.0.0",
+  "studio": ">=0.0.0",
+  "title": "Essentials",
+  "files": {
+    "pack": "pack.json",
+    "runtime": "runtime.json",
+    "search": "search.json",
+    "thumbnails": "thumbnails.json",
+    "preview": "preview.json"
+  },
+  "stylePack": {
+    "id": "pack_00",
+    "name": "Essentials",
+    "description": "A starter set of about a hundred styles picked from every Cozy pack: photography, painting, illustration, anime, 3D, fantasy, games and design.",
+    "cardTitle": "Essentials",
+    "cardDescription": "A hundred of the best looks across every pack.",
+    "presetCount": 100,
+    "landing": {
+      "imageKeys": [
+        "SP00-001",
+        "SP00-002",
+        "SP00-003",
+        "SP00-004",
+        "SP00-005",
+        "SP00-006"
+      ],
+      "collections": {}
+    },
+    "copiedFrom": {
+      "SP00-001": {
+        "packId": "pack_01",
+        "presetId": "SP01-031"
+      },
+      "SP00-002": {
+        "packId": "pack_01",
+        "presetId": "SP01-011"
+      },
+      "SP00-003": {
+        "packId": "pack_01",
+        "presetId": "SP01-046"
+      },
+      "SP00-004": {
+        "packId": "pack_01",
+        "presetId": "SP01-050"
+      },
+      "SP00-005": {
+        "packId": "pack_02",
+        "presetId": "SP02-001"
+      },
+      "SP00-006": {
+        "packId": "pack_02",
+        "presetId": "SP02-012"
+      },
+      "SP00-007": {
+        "packId": "pack_02",
+        "presetId": "SP02-003"
+      },
+      "SP00-008": {
+        "packId": "pack_02",
+        "presetId": "SP02-032"
+      },
+      "SP00-009": {
+        "packId": "pack_02",
+        "presetId": "SP02-034"
+      },
+      "SP00-010": {
+        "packId": "pack_03",
+        "presetId": "SP03-008"
+      },
+      "SP00-011": {
+        "packId": "pack_03",
+        "presetId": "SP03-015"
+      },
+      "SP00-012": {
+        "packId": "pack_03",
+        "presetId": "SP03-023"
+      },
+      "SP00-013": {
+        "packId": "pack_03",
+        "presetId": "SP03-021"
+      },
+      "SP00-014": {
+        "packId": "pack_03",
+        "presetId": "SP03-065"
+      },
+      "SP00-015": {
+        "packId": "pack_04",
+        "presetId": "SP04-017"
+      },
+      "SP00-016": {
+        "packId": "pack_04",
+        "presetId": "SP04-007"
+      },
+      "SP00-017": {
+        "packId": "pack_04",
+        "presetId": "SP04-031"
+      },
+      "SP00-018": {
+        "packId": "pack_04",
+        "presetId": "SP04-047"
+      },
+      "SP00-019": {
+        "packId": "pack_04",
+        "presetId": "SP04-063"
+      },
+      "SP00-020": {
+        "packId": "pack_06",
+        "presetId": "SP06-001"
+      },
+      "SP00-021": {
+        "packId": "pack_06",
+        "presetId": "SP06-002"
+      },
+      "SP00-022": {
+        "packId": "pack_06",
+        "presetId": "SP06-009"
+      },
+      "SP00-023": {
+        "packId": "pack_06",
+        "presetId": "SP06-008"
+      },
+      "SP00-024": {
+        "packId": "pack_06",
+        "presetId": "SP06-017"
+      },
+      "SP00-025": {
+        "packId": "pack_06",
+        "presetId": "SP06-046"
+      },
+      "SP00-026": {
+        "packId": "pack_06",
+        "presetId": "SP06-050"
+      },
+      "SP00-027": {
+        "packId": "pack_06",
+        "presetId": "SP06-049"
+      },
+      "SP00-028": {
+        "packId": "pack_22",
+        "presetId": "SP22-110"
+      },
+      "SP00-029": {
+        "packId": "pack_22",
+        "presetId": "SP22-116"
+      },
+      "SP00-030": {
+        "packId": "pack_22",
+        "presetId": "SP22-222"
+      },
+      "SP00-031": {
+        "packId": "pack_22",
+        "presetId": "SP22-211"
+      },
+      "SP00-032": {
+        "packId": "pack_22",
+        "presetId": "SP22-354"
+      },
+      "SP00-033": {
+        "packId": "pack_10",
+        "presetId": "SP10-031"
+      },
+      "SP00-034": {
+        "packId": "pack_10",
+        "presetId": "SP10-038"
+      },
+      "SP00-035": {
+        "packId": "pack_10",
+        "presetId": "SP10-074"
+      },
+      "SP00-036": {
+        "packId": "pack_10",
+        "presetId": "SP10-033"
+      },
+      "SP00-037": {
+        "packId": "pack_23",
+        "presetId": "SP23-003"
+      },
+      "SP00-038": {
+        "packId": "pack_23",
+        "presetId": "SP23-023"
+      },
+      "SP00-039": {
+        "packId": "pack_23",
+        "presetId": "SP23-213"
+      },
+      "SP00-040": {
+        "packId": "pack_17",
+        "presetId": "SP17-160"
+      },
+      "SP00-041": {
+        "packId": "pack_17",
+        "presetId": "SP17-007"
+      },
+      "SP00-042": {
+        "packId": "pack_17",
+        "presetId": "SP17-038"
+      },
+      "SP00-043": {
+        "packId": "pack_17",
+        "presetId": "SP17-240"
+      },
+      "SP00-044": {
+        "packId": "pack_14",
+        "presetId": "SP14-340"
+      },
+      "SP00-045": {
+        "packId": "pack_14",
+        "presetId": "SP14-380"
+      },
+      "SP00-046": {
+        "packId": "pack_14",
+        "presetId": "SP14-410"
+      },
+      "SP00-047": {
+        "packId": "pack_13",
+        "presetId": "SP13-064"
+      },
+      "SP00-048": {
+        "packId": "pack_05",
+        "presetId": "SP05-140"
+      },
+      "SP00-049": {
+        "packId": "pack_05",
+        "presetId": "SP05-051"
+      },
+      "SP00-050": {
+        "packId": "pack_13",
+        "presetId": "SP13-058"
+      },
+      "SP00-051": {
+        "packId": "pack_05",
+        "presetId": "SP05-273"
+      },
+      "SP00-052": {
+        "packId": "pack_13",
+        "presetId": "SP05-342"
+      },
+      "SP00-053": {
+        "packId": "pack_16",
+        "presetId": "SP05-014"
+      },
+      "SP00-054": {
+        "packId": "pack_16",
+        "presetId": "SP05-079"
+      },
+      "SP00-055": {
+        "packId": "pack_16",
+        "presetId": "SP05-078"
+      },
+      "SP00-056": {
+        "packId": "pack_16",
+        "presetId": "SP13-087"
+      },
+      "SP00-057": {
+        "packId": "pack_26",
+        "presetId": "SP26-023"
+      },
+      "SP00-058": {
+        "packId": "pack_26",
+        "presetId": "SP26-011"
+      },
+      "SP00-059": {
+        "packId": "pack_26",
+        "presetId": "SP26-024"
+      },
+      "SP00-060": {
+        "packId": "pack_26",
+        "presetId": "SP26-153"
+      },
+      "SP00-061": {
+        "packId": "pack_12",
+        "presetId": "SP12-070"
+      },
+      "SP00-062": {
+        "packId": "pack_12",
+        "presetId": "SP12-116"
+      },
+      "SP00-063": {
+        "packId": "pack_12",
+        "presetId": "SP12-012"
+      },
+      "SP00-064": {
+        "packId": "pack_12",
+        "presetId": "SP12-168"
+      },
+      "SP00-065": {
+        "packId": "pack_15",
+        "presetId": "SP15-081"
+      },
+      "SP00-066": {
+        "packId": "pack_15",
+        "presetId": "SP15-084"
+      },
+      "SP00-067": {
+        "packId": "pack_15",
+        "presetId": "SP15-145"
+      },
+      "SP00-068": {
+        "packId": "pack_15",
+        "presetId": "SP15-108"
+      },
+      "SP00-069": {
+        "packId": "pack_07",
+        "presetId": "SP07-003"
+      },
+      "SP00-070": {
+        "packId": "pack_07",
+        "presetId": "SP07-007"
+      },
+      "SP00-071": {
+        "packId": "pack_07",
+        "presetId": "SP07-051"
+      },
+      "SP00-072": {
+        "packId": "pack_07",
+        "presetId": "SP07-126"
+      },
+      "SP00-073": {
+        "packId": "pack_08",
+        "presetId": "SP08-001"
+      },
+      "SP00-074": {
+        "packId": "pack_08",
+        "presetId": "SP08-011"
+      },
+      "SP00-075": {
+        "packId": "pack_08",
+        "presetId": "SP08-013"
+      },
+      "SP00-076": {
+        "packId": "pack_11",
+        "presetId": "SP11-005"
+      },
+      "SP00-077": {
+        "packId": "pack_11",
+        "presetId": "SP11-018"
+      },
+      "SP00-078": {
+        "packId": "pack_11",
+        "presetId": "SP11-012"
+      },
+      "SP00-079": {
+        "packId": "pack_11",
+        "presetId": "SP11-007"
+      },
+      "SP00-080": {
+        "packId": "pack_25",
+        "presetId": "SP25-101"
+      },
+      "SP00-081": {
+        "packId": "pack_25",
+        "presetId": "SP25-042"
+      },
+      "SP00-082": {
+        "packId": "pack_25",
+        "presetId": "SP25-165"
+      },
+      "SP00-083": {
+        "packId": "pack_25",
+        "presetId": "SP25-242"
+      },
+      "SP00-084": {
+        "packId": "pack_28",
+        "presetId": "SP28-022"
+      },
+      "SP00-085": {
+        "packId": "pack_28",
+        "presetId": "SP28-024"
+      },
+      "SP00-086": {
+        "packId": "pack_28",
+        "presetId": "SP28-065"
+      },
+      "SP00-087": {
+        "packId": "pack_09",
+        "presetId": "SP09-051"
+      },
+      "SP00-088": {
+        "packId": "pack_09",
+        "presetId": "SP09-107"
+      },
+      "SP00-089": {
+        "packId": "pack_09",
+        "presetId": "SP09-022"
+      },
+      "SP00-090": {
+        "packId": "pack_19",
+        "presetId": "SP19-012"
+      },
+      "SP00-091": {
+        "packId": "pack_19",
+        "presetId": "SP19-014"
+      },
+      "SP00-092": {
+        "packId": "pack_20",
+        "presetId": "SP20-002"
+      },
+      "SP00-093": {
+        "packId": "pack_20",
+        "presetId": "SP20-004"
+      },
+      "SP00-094": {
+        "packId": "pack_21",
+        "presetId": "SP21-001"
+      },
+      "SP00-095": {
+        "packId": "pack_21",
+        "presetId": "SP21-003"
+      },
+      "SP00-096": {
+        "packId": "pack_24",
+        "presetId": "SP24-015"
+      },
+      "SP00-097": {
+        "packId": "pack_24",
+        "presetId": "SP24-027"
+      },
+      "SP00-098": {
+        "packId": "pack_27",
+        "presetId": "SP27-001"
+      },
+      "SP00-099": {
+        "packId": "pack_27",
+        "presetId": "SP27-013"
+      },
+      "SP00-100": {
+        "packId": "pack_01",
+        "presetId": "SP01-001"
+      }
+    }
+  },
+  "assets": []
+}

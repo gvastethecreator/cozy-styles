@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "cozy.pack-20",
+  "kind": "style-pack",
+  "version": "1.0.0",
+  "studio": ">=0.0.0",
+  "title": "Print Registers",
+  "files": {
+    "pack": "pack.json",
+    "runtime": "runtime.json",
+    "search": "search.json",
+    "thumbnails": "thumbnails.json",
+    "preview": "preview.json"
+  },
+  "stylePack": {
+    "id": "pack_20",
+    "name": "Print Registers",
+    "description": "Printmaking studies defined by plate marks, ink transfer, registration and printed tone. Representative cards are available; cross-subject visual evaluation remains pending.",
+    "presetCount": 21,
+    "landing": {
+      "imageKeys": [
+        "SP20-001",
+        "SP20-002",
+        "SP20-003",
+        "SP20-004",
+        "SP20-005",
+        "SP20-006"
+      ],
+      "collections": {
+        "portable_visual_studies": {
+          "presetCount": 21,
+          "imageKeys": [
+            "SP20-001",
+            "SP20-002",
+            "SP20-003",
+            "SP20-004",
+            "SP20-005",
+            "SP20-006"
+          ]
+        }
+      }
+    }
+  },
+  "assets": []
+}
