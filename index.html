@@ -1,0 +1,1004 @@
+<!DOCTYPE html><html lang="en" data-theme="dark" data-theme-default="dark" data-accent-tinted="true" data-template="on" data-shade="grain" data-frame="full" data-panel-align="center" data-navigation="paged" data-panel-surface="single" data-column="seamless" data-accent-cycle="[&quot;#8b6cff&quot;,&quot;#fcb247&quot;,&quot;#737373&quot;,&quot;#f43f5e&quot;,&quot;#f97316&quot;,&quot;#f59e0b&quot;,&quot;#22c55e&quot;,&quot;#06b6d4&quot;,&quot;#3b82f6&quot;]" data-action-accent data-sound data-paper-dark="#030206" data-paper-light="#eee8dc" style="--display:&quot;General Sans&quot;, &quot;Segoe UI Variable&quot;, ui-sans-serif, system-ui, sans-serif;--text:&quot;General Sans&quot;, &quot;Segoe UI Variable&quot;, ui-sans-serif, system-ui, sans-serif;--mono:&quot;Geist Mono&quot;, ui-monospace, &quot;Cascadia Code&quot;, monospace;--max:1180px;--header:48px;--radius:8px;--column-border-width:0px;--duration:180ms"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="color-scheme" content="dark"><meta name="theme-color" content="#030206"><style>:root[data-template], :root[data-template][data-theme="dark"] {--paper:#030206;--surface:#0b0911;--ink:#ece8f5;--muted:#a39db8;--backdrop:#08060f;--accent:#8b6cff;--action-bg:var(--accent, #8b6cff);--action-fg:#0b0a10}
+:root[data-template][data-theme="light"] {--paper:#eee8dc;--surface:#e7e1d4;--ink:#2a2a2a;--muted:#6a6a6a;--accent:#8b6cff;--action-bg:var(--accent, #8b6cff);--action-fg:#0b0a10}</style><script>
+      try {
+        var cycle = JSON.parse(document.documentElement.getAttribute("data-accent-cycle") || "[]");
+        var accent = localStorage.getItem("gvaste-accent:" + location.pathname);
+        if (accent && cycle.indexOf(accent) > 0) {
+          var h = accent.replace("#", "");
+          var rgb = [0, 2, 4].map(function (at) { return parseInt(h.slice(at, at + 2), 16); });
+          var style = document.documentElement.style;
+          // tokens.css derives --accent-1..9 from --accent.
+          style.setProperty("--accent", accent);
+          if (document.documentElement.hasAttribute("data-action-accent")) {
+            var lum = rgb.map(function (v) { var c = v / 255; return c <= 0.04045 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4); });
+            style.setProperty("--action-fg", 0.2126 * lum[0] + 0.7152 * lum[1] + 0.0722 * lum[2] > 0.179 ? "#0b0a10" : "#ffffff");
+          }
+        }
+      } catch (error) {}
+      try {
+        var stored = localStorage.getItem("gvaste-theme:" + location.pathname);
+        if (stored === "light" || stored === "dark") {
+          document.documentElement.setAttribute("data-theme", stored);
+          var scheme = document.querySelector('meta[name="color-scheme"]');
+          var paint = document.querySelector('meta[name="theme-color"]');
+          if (scheme) scheme.setAttribute("content", stored);
+          if (paint) {
+            var paper = document.documentElement.getAttribute(
+              stored === "light" ? "data-paper-light" : "data-paper-dark",
+            );
+            paint.setAttribute("content", paper || (stored === "light" ? "#eee8dc" : "#000000"));
+          }
+        }
+        if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+          document.documentElement.classList.add("js-motion");
+          window.setTimeout(function () {
+            if (!document.documentElement.hasAttribute("data-app")) {
+              document.documentElement.classList.remove("js-motion");
+            }
+          }, 2500);
+        }
+      } catch (error) {}
+    </script><meta name="description" content="Free style packs for Cozy Studio. Browse every style here, then install the packs from inside the app."><title>Cozy Styles — looks for Cozy Studio</title><link rel="canonical" href="https://gvastethecreator.github.io/cozy-styles/"><meta property="og:url" content="https://gvastethecreator.github.io/cozy-styles/"><meta property="og:title" content="Cozy Styles"><meta property="og:description" content="Free style packs for Cozy Studio. Browse every style here, then install the packs from inside the app."><meta property="og:type" content="website"><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&amp;display=swap"><link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&amp;display=swap"><link rel="stylesheet" href="/cozy-styles/_astro/index.De3OcsNs.css"></head><body><div class="veil" aria-hidden="true"></div><a class="skip" href="#main">Skip to content</a><script type="application/json" id="kit-ui">{"from":"From","copy":"Copy","copied":"Copied","copyCommand":"Copy command","copySource":"Copy source","copyFailed":"Select the command","previous":"Previous","next":"Next","previousImage":"Previous image","nextImage":"Next image","previousSlide":"Previous slide","nextSlide":"Next slide","closeViewer":"Close viewer","otherStills":"Other stills","skipToContent":"Skip to content","backToTop":"Back to top","primaryNavigation":"Primary navigation","menu":"Menu","openMenu":"Open menu","closeMenu":"Close menu","changeAccent":"Change accent colour","pauseAnimations":"Pause animations","playAnimations":"Play animations","useLightTheme":"Use light theme","useDarkTheme":"Use dark theme","madeBy":"made by","supportProject":"support this project","features":"Features","howItWorks":"How it works","limits":"Limits","closing":"Closing","source":"Source","stack":"Stack","notFound":"Not found","openHome":"Open the home page","carousel":"carousel","slide":"slide","of":"of","slides":"Slides","goToSlide":"Go to slide {n}","screensOf":"{name} screens","imageViewer":"Image viewer","openSection":"Open {title}","section":"section","backToSections":"Back to all sections","github":{"stars":"Stars","releases":"Releases","sponsors":"Sponsors","featuredSponsors":"Featured sponsors","noSponsors":"No public sponsors yet.","becomeSponsor":"Become a sponsor","activity":"Repository activity","commit":"commit","commits":"commits","days":"days","weeks":"weeks","months":"months","issues":"issues","lastCommit":"last commit","recentCommits":"Recent commits","contributors":"Contributors","changelog":"Changelog","activityAria":"{total} commits across {count} active {unit}","preRelease":"Pre-release","latest":"Latest","asset":"asset","assets":"assets","latestRelease":"Latest release","openRelease":"Open release","noReleases":"No tagged releases","openReleases":"Open releases","noCommits":"No commits returned.","openCommit":"Open commit","rateLimited":"GitHub rate-limited this browser.","missing":"GitHub did not find that public repository.","noData":"GitHub did not return repository data.","private":"Private repository data is not rendered by Gvaste Pages.","noRepository":"This section has no repository.","unreachable":"The browser could not reach the GitHub API.","topics":"Topics","builtWith":"Built with"},"profile":{"openOnGitHub":"Open {login} on GitHub","profileFacts":"Public profile facts","followers":"Followers","following":"Following","yearsOnGitHub":"Years on GitHub","company":"Company","website":"Website","location":"Location","joined":"Joined","linksSupport":"Links & support","dataScope":"Data scope","source":"Source","generated":"Generated","repositories":"Repositories","languages":"Languages","bytes":"bytes","other":"Other","noLanguageBytes":"Language bytes unavailable.","contributionCalendar":"Contribution calendar","repositoryUpdatesOnly":"Repository updates only","activityYear":"Activity year","activity":"Activity","intensityLegend":"Activity intensity legend","less":"Less","more":"More","updateCellsNote":"Cells are repository update dates. Contribution totals are unavailable from this source.","scrollableCalendar":"Scrollable activity calendar","mon":"Mon","wed":"Wed","fri":"Fri","recentWindow":"Recent window","publicEvents":"Public events","noRecentEvents":"No recent public events.","scope":"Scope","metrics":"Metrics","byStars":"By stars and recent update","allOnGitHub":"All on GitHub","starsUnit":"stars","forksUnit":"forks","characterFolio":"Character folio","joinedSince":"Joined","publicReposLower":"public repositories","identity":"Identity","publicProfileFields":"Public profile fields","publicLinks":"Public links and support","serviceRecord":"Service record","rolesWindow":"Roles in the contribution window","publicRepoMetrics":"Public repository metrics","rolesNote":"Contribution roles are not publicly verifiable from this source; the public repository record is shown instead.","contributionTrail":"Contribution trail","repositoryUpdates":"Repository updates","folioNote":"{total} {noun} across {weeks} weeks. {active} weeks active.","weeklyTrail":"Weekly {noun} across the coverage window","weeksActive":"Weeks active","weeklyAverage":"Weekly average","codeMix":"Code mix","languageBytes":"Language bytes","publicBytes":"Public bytes","noLanguageBytesFolio":"Language bytes are not publicly verifiable from this source.","publicRepositories":"Public repositories","updated":"Updated","period":"Period","selectYear":"Select activity year","verifiedCalendar":"Verified GitHub contribution calendar.","updateDatesMethod":"Public repository update dates; GitHub contribution totals are not available from this source.","rhythm":"Rhythm","activityOverTime":"Activity over time","activeDays":"Active days","chartTitle":"Daily {noun} in {year}","tableSummary":"Read {year} as a monthly table","month":"Month","search":"Search","searchPlaceholder":"Name, topic, description","language":"Language","allLanguages":"All languages","order":"Order","sortUpdated":"Updated","stars":"Stars","name":"Name","collaboration":"Collaboration","recentCounts":"Recent counts","heatmap":"Heatmap","dailyCounts":"Daily counts","calendarSummary":"Calendar summary","bestDay":"Best day","longestStreak":"Longest streak","utcDays":"UTC days","noContributionTotals":"No contribution totals here. Cells are public repository update dates only.","last365":"Last 365 days","calendar":"Calendar","dailyAria":"Daily {noun}","keyboardHint":"Arrow up/down: day · left/right: week · Home/End: coverage bounds","selectedDay":"Selected day","weekday":"Weekday","week":"Week","orbit":"Orbit","yearTerrain":"Year terrain","signal":"Signal","projection":"Projection","projectionValue":"date × intensity · SVG survey","terrainControls":"Terrain controls","year":"Year","orbitNote":"SVG · semantic fallback. Height uses log scale so one peak does not flatten the year.","field":"Field","utcSurvey":"UTC dates · SVG survey","terrainTitle":"{year} contribution terrain survey","visibleTotal":"Visible total","activeDates":"Active dates","peak":"Peak","verifiedSignal":"Verified calendar signal.","notContributionClaim":"Public repository update dates; not a contribution claim.","projects":"Projects","projectsSnapshot":"Listed public repositories from the reviewed snapshot.","projectsUpdates":"Public repository list. Day log counts repository updates, not contributions.","list":"List","methodology":"Methodology","sourceSample":"Sample data · local static JSON","sourceOwner":"Owner aggregate · identifiers excluded","sourcePublic":"Public GitHub profile data","languageScope":"selected public repositories","nounContributions":"contributions","nounUpdates":"repository updates","noDescription":"No description.","owner":"Owner","contributor":"Contributor","repoCoverage":"{measured} of {total} repos","publicActivity":"Public activity","calendarLabel":"{total} {noun} in {year}","contributions":"Contributions","calendarDetail":"{year} calendar","verifiedDates":"Verified dates","avgPerDay":"Avg / active day","calendarTotal":"Calendar total","highestDaily":"Highest daily count","measuredDetail":"{coverage} measured","repositoryStars":"Repository stars","recentCommits":"Recent commits","publicFeed":"Public feed","repositoryForks":"Repository forks","commits":"Commits","pullRequests":"Pull requests","reviews":"Reviews","issues":"Issues","contributionWindow":"Contribution window","forks":"Forks","pushes":"Pushes","prEvents":"PR events","reviewEvents":"Review events","issueEvents":"Issue events","releases":"Releases","streak":"{days} day best streak","noDatedActivity":"No dated repository activity","totalContributions":"Total contributions","coverage":"Coverage","privacy":"Privacy","publicDataOnly":"Public data only","ownedVisible":"Owned and visible","measuredRepos":"Measured repositories","listed":"Listed","measured":"Measured","pushEvents":"Push events","pullRequestEvents":"Pull request events","created":"Created","deleted":"Deleted","forked":"Forked","reviewedPullRequest":"Reviewed pull request","pushedTo":"Pushed to","publishedRelease":"Published release","starred":"Starred","issueAction":"{action} issue","issueActivity":"Issue activity","pullRequestAction":"{action} pull request","pullRequestActivity":"Pull request activity","publicActivityIn":"Public activity in","today":"today","dateUnknown":"date unknown","unknown":"Unknown","noActivityThesis":"No {noun} were recorded in this period.","peakThesis":"{month} holds the highest visible {noun} count in this period."},"hero":{"showCard":"Show {name}"},"screens":{"openFull":"Open the full-size image","more":"More screens"},"demo":{"title":"Demo","layout":"Workbench layout","samples":"Samples","split":"Split","preview":"Preview","source":"Source","prompt":"Prompt","compare":"Compare","playground":"Playground","previewOf":"Preview of {label}","livePreviewOf":"Live preview of {label}","originalPreviewOf":"Original preview of {label}","sourceFor":"Source for {label}","promptFor":"Prompt for {label}","original":"Original","live":"Live","controls":"Playground controls","device":"Device","previewWidth":"Preview width","mobile":"Mobile","tablet":"Tablet","desktop":"Desktop","scale":"Scale","reset":"Reset","compareLive":"Compare original and live","copyPrompt":"Copy prompt"},"docs":{"title":"Documentation","close":"Close documentation","open":"Open"},"commands":{"caption":"Commands and shortcuts","input":"Input","action":"Action","filter":"Filter commands"},"matrix":{"caption":"Status matrix","name":"Name","status":"Status","note":"Note"},"faq":{"label":"FAQ"},"skill":{"trigger":"Trigger","hosts":"Agent hosts","uses":"When to use it","worksWith":"Works with","agent":"agent","log":"What the agent does","you":"you","openPicture":"Open the picture","saved":"Saved"},"preview":{"title":"Preview","carouselLabel":"{name} preview","project":"Project"},"playground":{"title":"Playground","scenarios":"Scenarios"},"terminal":{"title":"Terminal","alternatives":"Command alternatives","output":"Command output","command":"Command {n}"},"code":{"title":"Code","alternatives":"Code alternatives","example":"Example {n}"},"comparison":{"title":"Comparison","before":"Before","after":"After","compare":"Compare {left} and {right}","evidence":"Evidence:"},"setup":{"title":"Setup","copyConfig":"Copy config","commands":"Setup commands","copyAll":"Copy all commands","verify":"Verify"}}</script><header class="site-head">
+  <div class="site-header">
+    <div class="site-leading">
+      
+      <div class="brand brand--cycle">
+        <button class="brand-cycle" type="button" data-accent-cycle aria-label="Change accent colour" title="Change accent colour">
+          <span class="brand-cycle__mark">
+            
+            
+            
+            
+            <span class="brand-mark brand-mark--mascot" data-mascot="mini" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="116 380 1048 812" overflow="visible" fill="none" aria-hidden="true" focusable="false">
+
+
+<defs>
+ <linearGradient id="brand-mascot-ink-body" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#2c2d2b"/><stop offset=".55" stop-color="#252624"/><stop offset="1" stop-color="#20211f"/></linearGradient>
+ <linearGradient id="brand-mascot-ink-limb" x1="0" y1="0" x2=".7" y2="1"><stop stop-color="#2c2d2b"/><stop offset="1" stop-color="#242523"/></linearGradient>
+ <linearGradient id="brand-mascot-ink-gold" x1="0" y1="0" x2="1" y2=".8"><stop stop-color="var(--wb-accent)"/><stop offset="1" stop-color="color-mix(in srgb, var(--wb-accent) 85%, #3b2820)"/></linearGradient>
+ <linearGradient id="brand-mascot-ink-paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="color-mix(in srgb, var(--wb-accent) 40%, #fff7e9)"/><stop offset="1" stop-color="color-mix(in srgb, var(--wb-accent) 65%, #fff7e9)"/></linearGradient>
+ <linearGradient id="brand-mascot-ink-cream" x1="0" y1="0" x2=".4" y2="1"><stop stop-color="#fff7e9"/><stop offset="1" stop-color="#ffedcf"/></linearGradient>
+ <radialGradient id="brand-mascot-floor-grad"><stop stop-color="#6b5140" stop-opacity=".17"/><stop offset="1" stop-color="#6b5140" stop-opacity="0"/></radialGradient>
+ <filter id="brand-mascot-sign-mono" color-interpolation-filters="sRGB"><feFlood flood-color="var(--mascot-sign-ink, #0a0812)"/><feComposite in2="SourceAlpha" operator="in"/></filter>
+ <clipPath id="brand-mascot-coffee-clip"><ellipse cx="643" cy="485" rx="264" ry="57"/></clipPath>
+</defs>
+<g data-part="shadow"><ellipse id="brand-mascot-floor-shadow" cx="640" cy="1181" rx="300" ry="34" fill="url(#brand-mascot-floor-grad)"/></g>
+<g id="brand-mascot-impact-fx" pointer-events="none"><ellipse id="brand-mascot-impact-ring" cx="640" cy="1180" rx="220" ry="24" stroke="var(--wb-accent)" stroke-width="3" opacity="0"/></g>
+<g id="brand-mascot-dust" pointer-events="none"><circle cx="470" cy="1158" r="30" fill="url(#brand-mascot-ink-cream)" opacity="0"/><circle cx="530" cy="1170" r="22" fill="url(#brand-mascot-ink-cream)" opacity="0"/><circle cx="585" cy="1164" r="16" fill="url(#brand-mascot-ink-cream)" opacity="0"/><circle cx="700" cy="1164" r="16" fill="url(#brand-mascot-ink-cream)" opacity="0"/><circle cx="755" cy="1170" r="22" fill="url(#brand-mascot-ink-cream)" opacity="0"/><circle cx="815" cy="1158" r="30" fill="url(#brand-mascot-ink-cream)" opacity="0"/></g>
+<g id="brand-mascot-framing"><g id="brand-mascot-world">
+ <g id="brand-mascot-limb-leg-left"><g id="brand-mascot-leg-left-shell" data-part="leg-left"><path id="brand-mascot-leg-left" d="M553 927Q540 1000 508 1092" stroke="url(#brand-mascot-ink-limb)" stroke-width="67" stroke-linecap="round"/></g><g data-part="foot-left"><g id="brand-mascot-foot-left" transform="translate(494 1114)"><path d="M-93 26C-98-11-61-53-15-53C36-59 73-29 73 9C73 42 51 50 8 52C-42 55-86 57-93 26Z" fill="url(#brand-mascot-ink-limb)"/></g></g></g>
+ <g id="brand-mascot-limb-leg-right"><g id="brand-mascot-leg-right-shell" data-part="leg-right"><path id="brand-mascot-leg-right" d="M719 930Q740 1000 768 1093" stroke="url(#brand-mascot-ink-limb)" stroke-width="67" stroke-linecap="round"/></g><g data-part="foot-right"><g id="brand-mascot-foot-right" transform="translate(784 1114)"><path d="M-73 10C-74-27-35-56 10-53C61-52 98-14 96 21C95 52 60 57 17 53C-39 50-74 41-73 10Z" fill="url(#brand-mascot-ink-limb)"/></g></g></g>
+ <g id="brand-mascot-upper"><g id="brand-mascot-torso">
+  <g data-part="handle"><path d="M930 535C1027 492 1133 525 1124 650C1119 745 1044 817 944 828L930 761C1006 780 1062 665 1036 610C1018 574 971 580 929 606Z" fill="url(#brand-mascot-ink-limb)"/></g>
+  <g data-part="body"><path d="M332 484C332 369 953 366 954 484C955 677 934 840 865 920C811 981 712 980 640 979C554 978 463 960 411 905C350 840 334 657 332 484Z" fill="url(#brand-mascot-ink-body)"/></g>
+  <g data-part="rim"><ellipse cx="643" cy="485" rx="264" ry="57" fill="url(#brand-mascot-ink-cream)"/></g>
+  <g data-part="coffee"><g clip-path="url(#brand-mascot-coffee-clip)"><ellipse cx="644" cy="508" rx="245" ry="47" fill="url(#brand-mascot-ink-gold)"/></g></g>
+  <g data-part="eye-left"><g id="brand-mascot-eye-left"><circle cx="503" cy="678" r="29" fill="url(#brand-mascot-ink-cream)"/></g></g>
+  <g data-part="eye-right"><g id="brand-mascot-eye-right"><circle cx="768" cy="678" r="29" fill="url(#brand-mascot-ink-cream)"/></g></g>
+  <g data-part="mouth"><g id="brand-mascot-mouth"><path id="brand-mascot-smile" d="M581 727C576 715 588 706 597 717C621 747 659 746 683 717C691 706 704 716 699 727C679 767 610 767 581 727Z" fill="url(#brand-mascot-ink-cream)"/><path id="brand-mascot-laugh" d="M590 718Q640 731 691 718Q691 791 642 793Q591 789 590 718Z" fill="url(#brand-mascot-ink-cream)" opacity="0"/><path id="brand-mascot-brow" d="M478 621Q499 613 519 624" stroke="url(#brand-mascot-ink-cream)" stroke-width="8" stroke-linecap="round" opacity="0"/><path id="brand-mascot-brow-right" d="M793 621Q772 613 752 624" stroke="url(#brand-mascot-ink-cream)" stroke-width="8" stroke-linecap="round" opacity="0"/><ellipse id="brand-mascot-mouth-o" cx="640" cy="738" rx="21" ry="25" fill="url(#brand-mascot-ink-cream)" opacity="0"/></g></g>
+  <g data-part="eyes-happy"><path id="brand-mascot-eye-left-happy" d="M474 690Q503 648 532 690" stroke="url(#brand-mascot-ink-cream)" stroke-width="15" stroke-linecap="round" opacity="0"/><path id="brand-mascot-eye-right-happy" d="M739 690Q768 648 797 690" stroke="url(#brand-mascot-ink-cream)" stroke-width="15" stroke-linecap="round" opacity="0"/></g>
+  <g data-part="blush" opacity="0"><ellipse cx="450" cy="744" rx="36" ry="17" fill="var(--wb-accent)" opacity=".55"/><ellipse cx="822" cy="744" rx="36" ry="17" fill="var(--wb-accent)" opacity=".55"/></g>
+  <g data-part="steam-a"><g id="brand-mascot-steam-a"><path d="M634.5 61.0Q627.0 58.0 623.0 58.5Q619.0 59.0 618.0 60.0Q617.0 61.0 617.0 63.5Q617.0 66.0 622.0 73.0Q627.0 80.0 629.5 86.0Q632.0 92.0 633.5 98.0Q635.0 104.0 635.0 115.5Q635.0 127.0 632.5 135.5Q630.0 144.0 627.5 149.5Q625.0 155.0 615.5 167.5Q606.0 180.0 594.0 191.0Q582.0 202.0 565.0 219.5Q548.0 237.0 540.5 249.5Q533.0 262.0 530.0 273.0Q527.0 284.0 527.0 294.5Q527.0 305.0 528.0 310.0Q529.0 315.0 531.0 320.5Q533.0 326.0 538.0 334.5Q543.0 343.0 547.0 348.0Q551.0 353.0 558.0 359.5Q565.0 366.0 573.5 371.5Q582.0 377.0 590.0 380.5Q598.0 384.0 602.0 384.0Q606.0 384.0 607.0 383.0Q608.0 382.0 608.0 379.5Q608.0 377.0 604.0 370.5Q600.0 364.0 597.5 355.0Q595.0 346.0 595.0 335.5Q595.0 325.0 597.5 316.0Q600.0 307.0 604.0 299.5Q608.0 292.0 614.0 284.0Q620.0 276.0 642.0 254.5Q664.0 233.0 669.0 227.0Q674.0 221.0 678.0 214.5Q682.0 208.0 686.5 198.0Q691.0 188.0 693.5 175.0Q696.0 162.0 696.0 154.5Q696.0 147.0 694.5 138.0Q693.0 129.0 690.5 121.5Q688.0 114.0 683.5 106.0Q679.0 98.0 674.5 92.0Q670.0 86.0 663.5 80.0Q657.0 74.0 649.5 69.0Q642.0 64.0 634.5 61.0Z" fill="url(#brand-mascot-ink-gold)"/></g></g>
+  <g data-part="steam-b"><g id="brand-mascot-steam-b"><path d="M757.0 176.0Q748.0 170.0 744.5 170.0Q741.0 170.0 740.0 171.5Q739.0 173.0 739.0 175.0Q739.0 177.0 741.5 184.0Q744.0 191.0 744.0 199.0Q744.0 207.0 740.5 216.0Q737.0 225.0 729.5 234.5Q722.0 244.0 706.0 258.0Q690.0 272.0 683.0 279.5Q676.0 287.0 672.5 292.0Q669.0 297.0 666.5 302.0Q664.0 307.0 662.5 312.0Q661.0 317.0 661.0 326.5Q661.0 336.0 662.0 340.0Q663.0 344.0 666.0 350.5Q669.0 357.0 675.5 365.0Q682.0 373.0 687.0 377.0Q692.0 381.0 696.5 383.0Q701.0 385.0 703.0 385.0Q705.0 385.0 706.5 383.5Q708.0 382.0 708.0 380.5Q708.0 379.0 705.5 373.5Q703.0 368.0 703.0 361.5Q703.0 355.0 706.0 347.5Q709.0 340.0 717.5 330.5Q726.0 321.0 738.5 311.5Q751.0 302.0 762.0 291.5Q773.0 281.0 777.5 274.5Q782.0 268.0 785.5 258.5Q789.0 249.0 789.5 237.5Q790.0 226.0 786.5 215.0Q783.0 204.0 779.0 198.0Q775.0 192.0 770.5 187.0Q766.0 182.0 757.0 176.0Z" fill="url(#brand-mascot-ink-gold)"/></g></g>
+  <g id="brand-mascot-limb-right">
+  <g data-part="arm-right"><path id="brand-mascot-arm-right" d="M915 796C1030 869 966 951 906 911" stroke="url(#brand-mascot-ink-limb)" stroke-width="75" stroke-linecap="round"/></g>
+  <g id="brand-mascot-book-carrier" transform="translate(868 848) rotate(18)">
+   <g data-part="notebook"><g id="brand-mascot-notebook"><rect x="-86" y="-86" width="144" height="210" rx="19" fill="var(--wb-accent)"/><rect x="-74" y="-86" width="143" height="210" rx="19" fill="url(#brand-mascot-ink-paper)"/><path d="M-57-85V123" stroke="#797064" stroke-width="7"/><path d="M-41-66H45" stroke="#fff0d8" stroke-width="3" stroke-opacity=".16" stroke-linecap="round"/><g id="brand-mascot-ink-drawing" stroke="#7b654e" stroke-width="4.3" stroke-linecap="round" stroke-linejoin="round" opacity="0"><path d="M-30-27Q-12-56 8-30T47-28" pathLength="100"/><path d="M-28-6H43" pathLength="100"/><path d="M-28 12H22" pathLength="100"/></g></g></g>
+   <g data-part="hand-right"><path d="M39-8C81-9 100 26 80 58C61 88 19 102-13 87C-50 70-49 37-23 25C-36 12-28-6-11-8C7-11 25 3 39-8Z" fill="url(#brand-mascot-ink-limb)"/></g>
+  </g>
+  </g>
+  <g id="brand-mascot-limb-left">
+  <g data-part="arm-left"><path id="brand-mascot-arm-left" d="M362 773C252 792 204 740 244 673" stroke="url(#brand-mascot-ink-limb)" stroke-width="72" stroke-linecap="round"/></g>
+  <g id="brand-mascot-pencil-carrier" transform="translate(244 673) rotate(-12)">
+   <g data-part="pencil"><g id="brand-mascot-pencil"><path d="M-22-174L-4-227Q0-238 6-227L22-174Z" fill="#252624"/><path d="M-22-174Q0-182 22-174L24-137Q0-147-24-137Z" fill="url(#brand-mascot-ink-cream)"/><path d="M-24-137Q0-147 24-137V81Q24 99 4 100H-4Q-24 99-24 81Z" fill="url(#brand-mascot-ink-gold)"/><path d="M16-136V78Q17 89 8 92" stroke="#f8d0a0" stroke-width="2" stroke-opacity=".15" stroke-linecap="round"/></g></g>
+   <g id="brand-mascot-sign" opacity="0"><rect x="-14" y="-150" width="28" height="162" rx="12" fill="#8a6a4f"/><rect x="-222" y="-578" width="444" height="444" rx="104" fill="#000" opacity=".24"/><rect id="brand-mascot-sign-plate" x="-222" y="-596" width="444" height="444" rx="104" fill="var(--mascot-sign-plate, #f4f1fb)" stroke="var(--mascot-sign-rim, #2c2d2b)" stroke-width="18"/><image id="brand-mascot-sign-logo" x="-146" y="-520" width="292" height="292" preserveAspectRatio="xMidYMid meet" href=""/></g>
+   <g data-part="hand-left"><ellipse cx="26" cy="-19" rx="22" ry="38" fill="url(#brand-mascot-ink-limb)"/><ellipse cx="-20" cy="-9" rx="42" ry="49" transform="rotate(25 -20 -9)" fill="url(#brand-mascot-ink-limb)"/></g>
+   <g data-part="sparks"><g id="brand-mascot-pencil-sparks" stroke="url(#brand-mascot-ink-gold)" stroke-width="16" stroke-linecap="round"><path id="brand-mascot-ray-a" d="M-66-251L-96-274"/><path id="brand-mascot-ray-b" d="M-33-284L-38-324"/><path id="brand-mascot-ray-c" d="M-87-204L-125-202"/></g></g>
+  </g>
+  </g>
+ </g></g>
+</g></g>
+<g id="brand-mascot-confetti" pointer-events="none"></g>
+<g id="brand-mascot-guides" pointer-events="none" stroke="#b88d62" stroke-width="1.6" stroke-dasharray="4 7" fill="none" opacity="0"></g>
+<g id="brand-mascot-selection" pointer-events="none" opacity="0"><rect id="brand-mascot-selection-box" rx="8" fill="#cd945b" fill-opacity=".06" stroke="#b78756" stroke-width="2" stroke-dasharray="8 6"/></g>
+</svg></span>
+            
+          </span>
+        </button>
+        <a class="brand-name" href="#main">Cozy Styles</a>
+      </div>
+      
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        
+        <a href="#showcase" data-nav-anchor>Styles</a>
+        
+        <a href="#about" data-nav-anchor>Packs</a>
+        
+        <a href="#setup" data-nav-anchor>Install</a>
+        
+        <a href="#faq" data-nav-anchor>FAQ</a>
+        
+        
+      </nav>
+    </div>
+    <div class="site-tools">
+      
+      <button type="button" class="icon-btn nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span class="nav-toggle__icon nav-toggle__open" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 6h16"/>
+            <path d="M4 12h16"/>
+            <path d="M4 18h16"/>
+          </svg>
+        </span>
+        <span class="nav-toggle__icon nav-toggle__close" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 6l-12 12"/>
+            <path d="M6 6l12 12"/>
+          </svg>
+        </span>
+        <span class="visually-hidden">Menu</span>
+      </button>
+      
+      <a class="button repo-btn" href="https://github.com/gvastethecreator/cozy-styles">
+        <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"/>
+        </svg>
+        <span class="repo-btn__label">GitHub</span>
+      </a>
+      
+      
+      <button type="button" class="icon-btn theme-toggle" data-theme-toggle aria-label="Use light theme">
+        <span class="theme-toggle__icon theme-toggle__sun" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 12a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"/>
+            <path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"/>
+          </svg>
+        </span>
+        <span class="theme-toggle__icon theme-toggle__moon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"/>
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="site-nav-backdrop" data-nav-backdrop hidden></div><div class="column"><main id="main"><section class="stack-panel hero" aria-labelledby="hero-title">
+  <div class="hero-copy">
+    <div class="hero-brand hero-brand--stacked">
+      
+      
+      
+      
+      <span class="hero-mascot" data-mascot="host" data-mascot-spot="fill" data-mascot-mood="happy" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="116 380 1048 812" overflow="visible" fill="none" aria-hidden="true" focusable="false">
+
+
+<defs>
+ <linearGradient id="hero-mascot-ink-body" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#2c2d2b"/><stop offset=".55" stop-color="#252624"/><stop offset="1" stop-color="#20211f"/></linearGradient>
+ <linearGradient id="hero-mascot-ink-limb" x1="0" y1="0" x2=".7" y2="1"><stop stop-color="#2c2d2b"/><stop offset="1" stop-color="#242523"/></linearGradient>
+ <linearGradient id="hero-mascot-ink-gold" x1="0" y1="0" x2="1" y2=".8"><stop stop-color="var(--wb-accent)"/><stop offset="1" stop-color="color-mix(in srgb, var(--wb-accent) 85%, #3b2820)"/></linearGradient>
+ <linearGradient id="hero-mascot-ink-paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="color-mix(in srgb, var(--wb-accent) 40%, #fff7e9)"/><stop offset="1" stop-color="color-mix(in srgb, var(--wb-accent) 65%, #fff7e9)"/></linearGradient>
+ <linearGradient id="hero-mascot-ink-cream" x1="0" y1="0" x2=".4" y2="1"><stop stop-color="#fff7e9"/><stop offset="1" stop-color="#ffedcf"/></linearGradient>
+ <radialGradient id="hero-mascot-floor-grad"><stop stop-color="#6b5140" stop-opacity=".17"/><stop offset="1" stop-color="#6b5140" stop-opacity="0"/></radialGradient>
+ <filter id="hero-mascot-sign-mono" color-interpolation-filters="sRGB"><feFlood flood-color="var(--mascot-sign-ink, #0a0812)"/><feComposite in2="SourceAlpha" operator="in"/></filter>
+ <clipPath id="hero-mascot-coffee-clip"><ellipse cx="643" cy="485" rx="264" ry="57"/></clipPath>
+</defs>
+<g data-part="shadow"><ellipse id="hero-mascot-floor-shadow" cx="640" cy="1181" rx="300" ry="34" fill="url(#hero-mascot-floor-grad)"/></g>
+<g id="hero-mascot-impact-fx" pointer-events="none"><ellipse id="hero-mascot-impact-ring" cx="640" cy="1180" rx="220" ry="24" stroke="var(--wb-accent)" stroke-width="3" opacity="0"/></g>
+<g id="hero-mascot-dust" pointer-events="none"><circle cx="470" cy="1158" r="30" fill="url(#hero-mascot-ink-cream)" opacity="0"/><circle cx="530" cy="1170" r="22" fill="url(#hero-mascot-ink-cream)" opacity="0"/><circle cx="585" cy="1164" r="16" fill="url(#hero-mascot-ink-cream)" opacity="0"/><circle cx="700" cy="1164" r="16" fill="url(#hero-mascot-ink-cream)" opacity="0"/><circle cx="755" cy="1170" r="22" fill="url(#hero-mascot-ink-cream)" opacity="0"/><circle cx="815" cy="1158" r="30" fill="url(#hero-mascot-ink-cream)" opacity="0"/></g>
+<g id="hero-mascot-framing"><g id="hero-mascot-world">
+ <g id="hero-mascot-limb-leg-left"><g id="hero-mascot-leg-left-shell" data-part="leg-left"><path id="hero-mascot-leg-left" d="M553 927Q540 1000 508 1092" stroke="url(#hero-mascot-ink-limb)" stroke-width="67" stroke-linecap="round"/></g><g data-part="foot-left"><g id="hero-mascot-foot-left" transform="translate(494 1114)"><path d="M-93 26C-98-11-61-53-15-53C36-59 73-29 73 9C73 42 51 50 8 52C-42 55-86 57-93 26Z" fill="url(#hero-mascot-ink-limb)"/></g></g></g>
+ <g id="hero-mascot-limb-leg-right"><g id="hero-mascot-leg-right-shell" data-part="leg-right"><path id="hero-mascot-leg-right" d="M719 930Q740 1000 768 1093" stroke="url(#hero-mascot-ink-limb)" stroke-width="67" stroke-linecap="round"/></g><g data-part="foot-right"><g id="hero-mascot-foot-right" transform="translate(784 1114)"><path d="M-73 10C-74-27-35-56 10-53C61-52 98-14 96 21C95 52 60 57 17 53C-39 50-74 41-73 10Z" fill="url(#hero-mascot-ink-limb)"/></g></g></g>
+ <g id="hero-mascot-upper"><g id="hero-mascot-torso">
+  <g data-part="handle"><path d="M930 535C1027 492 1133 525 1124 650C1119 745 1044 817 944 828L930 761C1006 780 1062 665 1036 610C1018 574 971 580 929 606Z" fill="url(#hero-mascot-ink-limb)"/></g>
+  <g data-part="body"><path d="M332 484C332 369 953 366 954 484C955 677 934 840 865 920C811 981 712 980 640 979C554 978 463 960 411 905C350 840 334 657 332 484Z" fill="url(#hero-mascot-ink-body)"/></g>
+  <g data-part="rim"><ellipse cx="643" cy="485" rx="264" ry="57" fill="url(#hero-mascot-ink-cream)"/></g>
+  <g data-part="coffee"><g clip-path="url(#hero-mascot-coffee-clip)"><ellipse cx="644" cy="508" rx="245" ry="47" fill="url(#hero-mascot-ink-gold)"/></g></g>
+  <g data-part="eye-left"><g id="hero-mascot-eye-left"><circle cx="503" cy="678" r="29" fill="url(#hero-mascot-ink-cream)"/></g></g>
+  <g data-part="eye-right"><g id="hero-mascot-eye-right"><circle cx="768" cy="678" r="29" fill="url(#hero-mascot-ink-cream)"/></g></g>
+  <g data-part="mouth"><g id="hero-mascot-mouth"><path id="hero-mascot-smile" d="M581 727C576 715 588 706 597 717C621 747 659 746 683 717C691 706 704 716 699 727C679 767 610 767 581 727Z" fill="url(#hero-mascot-ink-cream)"/><path id="hero-mascot-laugh" d="M590 718Q640 731 691 718Q691 791 642 793Q591 789 590 718Z" fill="url(#hero-mascot-ink-cream)" opacity="0"/><path id="hero-mascot-brow" d="M478 621Q499 613 519 624" stroke="url(#hero-mascot-ink-cream)" stroke-width="8" stroke-linecap="round" opacity="0"/><path id="hero-mascot-brow-right" d="M793 621Q772 613 752 624" stroke="url(#hero-mascot-ink-cream)" stroke-width="8" stroke-linecap="round" opacity="0"/><ellipse id="hero-mascot-mouth-o" cx="640" cy="738" rx="21" ry="25" fill="url(#hero-mascot-ink-cream)" opacity="0"/></g></g>
+  <g data-part="eyes-happy"><path id="hero-mascot-eye-left-happy" d="M474 690Q503 648 532 690" stroke="url(#hero-mascot-ink-cream)" stroke-width="15" stroke-linecap="round" opacity="0"/><path id="hero-mascot-eye-right-happy" d="M739 690Q768 648 797 690" stroke="url(#hero-mascot-ink-cream)" stroke-width="15" stroke-linecap="round" opacity="0"/></g>
+  <g data-part="blush" opacity="0"><ellipse cx="450" cy="744" rx="36" ry="17" fill="var(--wb-accent)" opacity=".55"/><ellipse cx="822" cy="744" rx="36" ry="17" fill="var(--wb-accent)" opacity=".55"/></g>
+  <g data-part="steam-a"><g id="hero-mascot-steam-a"><path d="M634.5 61.0Q627.0 58.0 623.0 58.5Q619.0 59.0 618.0 60.0Q617.0 61.0 617.0 63.5Q617.0 66.0 622.0 73.0Q627.0 80.0 629.5 86.0Q632.0 92.0 633.5 98.0Q635.0 104.0 635.0 115.5Q635.0 127.0 632.5 135.5Q630.0 144.0 627.5 149.5Q625.0 155.0 615.5 167.5Q606.0 180.0 594.0 191.0Q582.0 202.0 565.0 219.5Q548.0 237.0 540.5 249.5Q533.0 262.0 530.0 273.0Q527.0 284.0 527.0 294.5Q527.0 305.0 528.0 310.0Q529.0 315.0 531.0 320.5Q533.0 326.0 538.0 334.5Q543.0 343.0 547.0 348.0Q551.0 353.0 558.0 359.5Q565.0 366.0 573.5 371.5Q582.0 377.0 590.0 380.5Q598.0 384.0 602.0 384.0Q606.0 384.0 607.0 383.0Q608.0 382.0 608.0 379.5Q608.0 377.0 604.0 370.5Q600.0 364.0 597.5 355.0Q595.0 346.0 595.0 335.5Q595.0 325.0 597.5 316.0Q600.0 307.0 604.0 299.5Q608.0 292.0 614.0 284.0Q620.0 276.0 642.0 254.5Q664.0 233.0 669.0 227.0Q674.0 221.0 678.0 214.5Q682.0 208.0 686.5 198.0Q691.0 188.0 693.5 175.0Q696.0 162.0 696.0 154.5Q696.0 147.0 694.5 138.0Q693.0 129.0 690.5 121.5Q688.0 114.0 683.5 106.0Q679.0 98.0 674.5 92.0Q670.0 86.0 663.5 80.0Q657.0 74.0 649.5 69.0Q642.0 64.0 634.5 61.0Z" fill="url(#hero-mascot-ink-gold)"/></g></g>
+  <g data-part="steam-b"><g id="hero-mascot-steam-b"><path d="M757.0 176.0Q748.0 170.0 744.5 170.0Q741.0 170.0 740.0 171.5Q739.0 173.0 739.0 175.0Q739.0 177.0 741.5 184.0Q744.0 191.0 744.0 199.0Q744.0 207.0 740.5 216.0Q737.0 225.0 729.5 234.5Q722.0 244.0 706.0 258.0Q690.0 272.0 683.0 279.5Q676.0 287.0 672.5 292.0Q669.0 297.0 666.5 302.0Q664.0 307.0 662.5 312.0Q661.0 317.0 661.0 326.5Q661.0 336.0 662.0 340.0Q663.0 344.0 666.0 350.5Q669.0 357.0 675.5 365.0Q682.0 373.0 687.0 377.0Q692.0 381.0 696.5 383.0Q701.0 385.0 703.0 385.0Q705.0 385.0 706.5 383.5Q708.0 382.0 708.0 380.5Q708.0 379.0 705.5 373.5Q703.0 368.0 703.0 361.5Q703.0 355.0 706.0 347.5Q709.0 340.0 717.5 330.5Q726.0 321.0 738.5 311.5Q751.0 302.0 762.0 291.5Q773.0 281.0 777.5 274.5Q782.0 268.0 785.5 258.5Q789.0 249.0 789.5 237.5Q790.0 226.0 786.5 215.0Q783.0 204.0 779.0 198.0Q775.0 192.0 770.5 187.0Q766.0 182.0 757.0 176.0Z" fill="url(#hero-mascot-ink-gold)"/></g></g>
+  <g id="hero-mascot-limb-right">
+  <g data-part="arm-right"><path id="hero-mascot-arm-right" d="M915 796C1030 869 966 951 906 911" stroke="url(#hero-mascot-ink-limb)" stroke-width="75" stroke-linecap="round"/></g>
+  <g id="hero-mascot-book-carrier" transform="translate(868 848) rotate(18)">
+   <g data-part="notebook"><g id="hero-mascot-notebook"><rect x="-86" y="-86" width="144" height="210" rx="19" fill="var(--wb-accent)"/><rect x="-74" y="-86" width="143" height="210" rx="19" fill="url(#hero-mascot-ink-paper)"/><path d="M-57-85V123" stroke="#797064" stroke-width="7"/><path d="M-41-66H45" stroke="#fff0d8" stroke-width="3" stroke-opacity=".16" stroke-linecap="round"/><g id="hero-mascot-ink-drawing" stroke="#7b654e" stroke-width="4.3" stroke-linecap="round" stroke-linejoin="round" opacity="0"><path d="M-30-27Q-12-56 8-30T47-28" pathLength="100"/><path d="M-28-6H43" pathLength="100"/><path d="M-28 12H22" pathLength="100"/></g></g></g>
+   <g data-part="hand-right"><path d="M39-8C81-9 100 26 80 58C61 88 19 102-13 87C-50 70-49 37-23 25C-36 12-28-6-11-8C7-11 25 3 39-8Z" fill="url(#hero-mascot-ink-limb)"/></g>
+  </g>
+  </g>
+  <g id="hero-mascot-limb-left">
+  <g data-part="arm-left"><path id="hero-mascot-arm-left" d="M362 773C252 792 204 740 244 673" stroke="url(#hero-mascot-ink-limb)" stroke-width="72" stroke-linecap="round"/></g>
+  <g id="hero-mascot-pencil-carrier" transform="translate(244 673) rotate(-12)">
+   <g data-part="pencil"><g id="hero-mascot-pencil"><path d="M-22-174L-4-227Q0-238 6-227L22-174Z" fill="#252624"/><path d="M-22-174Q0-182 22-174L24-137Q0-147-24-137Z" fill="url(#hero-mascot-ink-cream)"/><path d="M-24-137Q0-147 24-137V81Q24 99 4 100H-4Q-24 99-24 81Z" fill="url(#hero-mascot-ink-gold)"/><path d="M16-136V78Q17 89 8 92" stroke="#f8d0a0" stroke-width="2" stroke-opacity=".15" stroke-linecap="round"/></g></g>
+   <g id="hero-mascot-sign" opacity="0"><rect x="-14" y="-150" width="28" height="162" rx="12" fill="#8a6a4f"/><rect x="-222" y="-578" width="444" height="444" rx="104" fill="#000" opacity=".24"/><rect id="hero-mascot-sign-plate" x="-222" y="-596" width="444" height="444" rx="104" fill="var(--mascot-sign-plate, #f4f1fb)" stroke="var(--mascot-sign-rim, #2c2d2b)" stroke-width="18"/><image id="hero-mascot-sign-logo" x="-146" y="-520" width="292" height="292" preserveAspectRatio="xMidYMid meet" href=""/></g>
+   <g data-part="hand-left"><ellipse cx="26" cy="-19" rx="22" ry="38" fill="url(#hero-mascot-ink-limb)"/><ellipse cx="-20" cy="-9" rx="42" ry="49" transform="rotate(25 -20 -9)" fill="url(#hero-mascot-ink-limb)"/></g>
+   <g data-part="sparks"><g id="hero-mascot-pencil-sparks" stroke="url(#hero-mascot-ink-gold)" stroke-width="16" stroke-linecap="round"><path id="hero-mascot-ray-a" d="M-66-251L-96-274"/><path id="hero-mascot-ray-b" d="M-33-284L-38-324"/><path id="hero-mascot-ray-c" d="M-87-204L-125-202"/></g></g>
+  </g>
+  </g>
+ </g></g>
+</g></g>
+<g id="hero-mascot-confetti" pointer-events="none"></g>
+<g id="hero-mascot-guides" pointer-events="none" stroke="#b88d62" stroke-width="1.6" stroke-dasharray="4 7" fill="none" opacity="0"></g>
+<g id="hero-mascot-selection" pointer-events="none" opacity="0"><rect id="hero-mascot-selection-box" rx="8" fill="#cd945b" fill-opacity=".06" stroke="#b78756" stroke-width="2" stroke-dasharray="8 6"/></g>
+</svg></span>
+      
+      <p class="hero-name">Cozy<br>Styles</p>
+    </div>
+    
+    <h1 id="hero-title">A look for <span class="hero-accent">every idea.</span></h1>
+    
+    <p class="lede">Ready-made styles you add to any prompt in Cozy Studio. 144 styles in 3 packs, free.</p>
+    
+    
+    <div class="actions">
+      
+      
+      
+      <a class="button primary" href="styles/">Browse every style</a>
+      
+      
+      
+      
+      <a class="button" href="https://gvastethecreator.github.io/cozy-studio/">Get Cozy Studio</a>
+      
+      
+    </div>
+    
+  </div>
+  
+  <div class="hero-stage">
+    
+    
+    <figure class="deck" data-deck aria-roledescription="carousel" aria-label="Cozy Styles screens">
+      <div class="deck__stack" data-deck-stack tabindex="0">
+        
+        <article class="deck__card" data-deck-card data-file="" data-caption="Offset Drift" aria-roledescription="slide" aria-label="1 of 6">
+          <img src="assets/styles/sp20-001.webp" alt="Offset Drift style sample from Print Registers" fetchpriority="high" draggable="false">
+          
+          <span class="deck__label">Offset Drift</span>
+          
+        </article>
+        
+        <article class="deck__card" data-deck-card data-file="" data-caption="Opaque Planes" aria-roledescription="slide" aria-label="2 of 6">
+          <img src="assets/styles/sp21-003.webp" alt="Opaque Planes style sample from Paper &amp; Pigment" decoding="async" draggable="false">
+          
+          <span class="deck__label">Opaque Planes</span>
+          
+        </article>
+        
+        <article class="deck__card" data-deck-card data-file="" data-caption="Stained Glass" aria-roledescription="slide" aria-label="3 of 6">
+          <img src="assets/styles/sp00-036.webp" alt="Stained Glass style sample from Essentials" decoding="async" draggable="false">
+          
+          <span class="deck__label">Stained Glass</span>
+          
+        </article>
+        
+        <article class="deck__card" data-deck-card data-file="" data-caption="Cyanotype Contact" aria-roledescription="slide" aria-label="4 of 6">
+          <img src="assets/styles/sp20-008.webp" alt="Cyanotype Contact style sample from Print Registers" decoding="async" draggable="false">
+          
+          <span class="deck__label">Cyanotype Contact</span>
+          
+        </article>
+        
+        <article class="deck__card" data-deck-card data-file="" data-caption="Translucent Tissue Layers" aria-roledescription="slide" aria-label="5 of 6">
+          <img src="assets/styles/sp21-012.webp" alt="Translucent Tissue Layers style sample from Paper &amp; Pigment" decoding="async" draggable="false">
+          
+          <span class="deck__label">Translucent Tissue Layers</span>
+          
+        </article>
+        
+        <article class="deck__card" data-deck-card data-file="" data-caption="Makoto Shinkai 5cm" aria-roledescription="slide" aria-label="6 of 6">
+          <img src="assets/styles/sp00-051.webp" alt="Makoto Shinkai 5cm style sample from Essentials" decoding="async" draggable="false">
+          
+          <span class="deck__label">Makoto Shinkai 5cm</span>
+          
+        </article>
+        
+      </div>
+      <div class="deck__controls">
+        <button class="deck__btn" type="button" data-deck-prev aria-label="Previous">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>
+        </button>
+        <p class="deck__file" data-deck-file aria-live="polite"></p>
+        <button class="deck__btn" type="button" data-deck-next aria-label="Next">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+        </button>
+      </div>
+      
+    </figure>
+    
+    
+    
+  </div>
+  
+</section>
+<section class="stack-panel showcase showcase--marquee" id="showcase" aria-labelledby="showcase-title">
+  <header class="section-head showcase__head" data-mascot-spot="bottom-end" data-mascot-size="180" data-mascot-mood="focused" data-mascot-pose="draw" data-mascot-look="[data-marquee]">
+    
+    <p class="kicker">Styles</p>
+    
+    <h2 id="showcase-title">See a style before you use it.</h2>
+    
+    <p class="lede">Every style comes with sample cards, so you know the look before you spend a single image on it.</p>
+    
+  </header>
+  <div class="showcase__marquee" data-marquee data-rows="3">
+    
+    <ul class="marquee__row" data-direction="-1" data-duration="46">
+      
+      <li class="marquee__card">
+        <img src="assets/styles/sp00-001.webp" alt="Studio Headshot style sample" decoding="async" loading="lazy" draggable="false">
+        
+        <span>Studio Headshot</span>
+        
+      </li>
+      
+      <li class="marquee__card">
+        <img src="assets/styles/sp20-002.webp" alt="Stencil Duotone style sample" decoding="async" loading="lazy" draggable="false">
+        
+        <span>Stencil Duotone</span>
+        
+      </li>
+      
+      <li class="marquee__card">
+        <img src="assets/styles/sp21-002.webp" alt="Resist Wash style sample" decoding="async" loading="lazy" draggable="false">
+        
+        <span>Resist Wash</span>
+        
+      </li>
+      
+      <li class="marquee__card">
+        <img src="assets/styles/sp00-003.webp" alt="Kodak Portra 400 style sample" decoding="async" loading="lazy" draggable="false">
+        
+        <span>Kodak Portra 400</span>
+        
+      </li>
+      
+      <li class="marquee__card">
+        <img src="assets/styles/sp20-004.webp" alt="Engraved Tone style sample" decoding="async" loading="lazy" draggable="false">
+        
+        <span>Engraved Tone</span>
+        
+      </li>
+      
+      <li class="marquee__card">
+        <img src="assets/styles/sp21-005.webp" alt="Toned Ground style sample" decoding="async" loading="lazy" draggable="false">
+        
+        <span>Toned Ground</span>
+        
+      </li>
+      
+      <li class="marquee__card">
+        <img src="assets/styles/sp00-006.webp" alt="Film Noir style sample" decoding="async" loading="lazy" draggable="false">
+        
+        <span>Film Noir</span>
+        
+      </li>
+      
+      <li class="marquee__card">
+        <img src="assets/styles/sp20-005.webp" alt="Crayon Lithograph style sample" decoding="async" loading="lazy" draggable="false">
+        
+        <span>Crayon Lithograph</span>
+        
+      </li>
+      
+      <li class="marquee__card">
+        <img src="assets/styles/sp21-006.webp" alt="Pastel Tooth style sample" decoding="async" loading="lazy" draggable="false">
+        
+        <span>Pastel Tooth</span>
+        
+      </li>
+      
+      <li class="marquee__card">
+        <img src="assets/styles/sp00-011.webp" alt="Feature Animation Path Tracer style sample" decoding="async" loading="lazy" draggable="false">
+        
+        <span>Feature Animation Path Tracer</span>
+        
+      </li>
+      
+      <li class="marquee__card">
+        <img src="assets/styles/sp20-006.webp" alt="Mezzotint Velvet style sample" decoding="async" loading="lazy" draggable="false">
+        
+        <span>Mezzotint Velvet</span>
+        
+      </li>
+      
+      <li class="marquee__card">
+        <img src="assets/styles/sp21-008.webp" alt="Granulating Wash style sample" decoding="async" loading="lazy" draggable="false">
+        
+        <span>Granulating Wash</span>
+        
+      </li>
+      
+    </ul>
+    
+    <ul class="marquee__row" data-direction="1" data-duration="54">
+      
+      <li class="marquee__card">
+        <img src="assets/styles/sp00-016.webp" alt="Watercolor Storybook style sample" decoding="async" loading="lazy" draggable="false">
+        
+        <span>Watercolor Storybook</span>
+        
+      </li>
+      
+      <li class="marquee__card">
+        <img src="assets/styles/sp20-007.webp" alt="Monotype Wipe style sample" decoding="async" loading="lazy" draggable="false">
+        
+        <span>Monotype Wipe</span>
+        
+      </li>
+      
+      <li class="marquee__card">
+        <img src="assets/styles/sp21-009.webp" alt="Optical Glaze style sample" decoding="async" loading="lazy" draggable="false">
+        
+        <span>Optical Glaze</span>
+        
+      </li>
+      
+      <li class="marquee__card">
+        <img src="assets/styles/sp00-021.webp" alt="Oil Painting (Classic) style sample" decoding="async" loading="lazy" draggable="false">
+        
+        <span>Oil Painting (Classic)</span>
+        
+      </li>
+      
+      <li class="marquee__card">
+        <img src="assets/styles/sp20-010.webp" alt="Halftone Screen style sample" decoding="async" loading="lazy" draggable="false">
+        
+        <span>Halftone Screen</span>
+        
+      </li>
+      
+      <li class="marquee__card">
+        <img src="assets/styles/sp21-010.webp" alt="Palette-Knife Impasto style sample" decoding="async" loading="lazy" draggable="false">
+        
+        <span>Palette-Knife Impasto</span>
+        
+      </li>
+      
+      <li class="marquee__card">
+        <img src="assets/styles/sp00-031.webp" alt="Vincent van Gogh style sample" decoding="async" loading="lazy" draggable="false">
+        
+        <span>Vincent van Gogh</span>
+        
+      </li>
+      
+      <li class="marquee__card">
+        <img src="assets/styles/sp20-014.webp" alt="Plank-Grain Relief style sample" decoding="async" loading="lazy" draggable="false">
+        
+        <span>Plank-Grain Relief</span>
+        
+      </li>
+      
+      <li class="marquee__card">
+        <img src="assets/styles/sp21-013.webp" alt="Singed Paper Burn-Through style sample" decoding="async" loading="lazy" draggable="false">
+        
+        <span>Singed Paper Burn-Through</span>
+        
+      </li>
+      
+      <li class="marquee__card">
+        <img src="assets/styles/sp00-048.webp" alt="Vagabond style sample" decoding="async" loading="lazy" draggable="false">
+        
+        <span>Vagabond</span>
+        
+      </li>
+      
+      <li class="marquee__card">
+        <img src="assets/styles/sp20-015.webp" alt="Stele Ink Rubbing style sample" decoding="async" loading="lazy" draggable="false">
+        
+        <span>Stele Ink Rubbing</span>
+        
+      </li>
+      
+      <li class="marquee__card">
+        <img src="assets/styles/sp21-016.webp" alt="Folded Tessellation Relief style sample" decoding="async" loading="lazy" draggable="false">
+        
+        <span>Folded Tessellation Relief</span>
+        
+      </li>
+      
+    </ul>
+    
+    <ul class="marquee__row" data-direction="-1" data-duration="40">
+      
+      <li class="marquee__card">
+        <img src="assets/styles/sp00-056.webp" alt="Akira style sample" decoding="async" loading="lazy" draggable="false">
+        
+        <span>Akira</span>
+        
+      </li>
+      
+      <li class="marquee__card">
+        <img src="assets/styles/sp20-018.webp" alt="Rainbow-Roll Relief style sample" decoding="async" loading="lazy" draggable="false">
+        
+        <span>Rainbow-Roll Relief</span>
+        
+      </li>
+      
+      <li class="marquee__card">
+        <img src="assets/styles/sp21-017.webp" alt="Pinpricked Paper Light style sample" decoding="async" loading="lazy" draggable="false">
+        
+        <span>Pinpricked Paper Light</span>
+        
+      </li>
+      
+      <li class="marquee__card">
+        <img src="assets/styles/sp00-063.webp" alt="Ori and the Blind Forest 2015 style sample" decoding="async" loading="lazy" draggable="false">
+        
+        <span>Ori and the Blind Forest 2015</span>
+        
+      </li>
+      
+      <li class="marquee__card">
+        <img src="assets/styles/sp20-020.webp" alt="Gel Plate Layers style sample" decoding="async" loading="lazy" draggable="false">
+        
+        <span>Gel Plate Layers</span>
+        
+      </li>
+      
+      <li class="marquee__card">
+        <img src="assets/styles/sp21-018.webp" alt="Dusted Pigment Stencil style sample" decoding="async" loading="lazy" draggable="false">
+        
+        <span>Dusted Pigment Stencil</span>
+        
+      </li>
+      
+      <li class="marquee__card">
+        <img src="assets/styles/sp00-073.webp" alt="Static-Grass Scenic Layout style sample" decoding="async" loading="lazy" draggable="false">
+        
+        <span>Static-Grass Scenic Layout</span>
+        
+      </li>
+      
+      <li class="marquee__card">
+        <img src="assets/styles/sp20-016.webp" alt="Solvent Transfer Ghost style sample" decoding="async" loading="lazy" draggable="false">
+        
+        <span>Solvent Transfer Ghost</span>
+        
+      </li>
+      
+      <li class="marquee__card">
+        <img src="assets/styles/sp21-020.webp" alt="Synthetic-Sheet Watercolor Swirl style sample" decoding="async" loading="lazy" draggable="false">
+        
+        <span>Synthetic-Sheet Watercolor Swirl</span>
+        
+      </li>
+      
+      <li class="marquee__card">
+        <img src="assets/styles/sp00-083.webp" alt="Leonetto Cappiello style sample" decoding="async" loading="lazy" draggable="false">
+        
+        <span>Leonetto Cappiello</span>
+        
+      </li>
+      
+      <li class="marquee__card">
+        <img src="assets/styles/sp20-011.webp" alt="Photogravure Tone style sample" decoding="async" loading="lazy" draggable="false">
+        
+        <span>Photogravure Tone</span>
+        
+      </li>
+      
+      <li class="marquee__card">
+        <img src="assets/styles/sp21-023.webp" alt="Mineral Color Planes style sample" decoding="async" loading="lazy" draggable="false">
+        
+        <span>Mineral Color Planes</span>
+        
+      </li>
+      
+    </ul>
+    
+  </div>
+</section>
+<section class="stack-panel about about--semantic about--visual-cards" id="about" aria-labelledby="about-title">
+  <header class="about-head">
+    
+    <p class="kicker">Packs</p>
+    
+    <h2 id="about-title">Three packs, 144 styles.</h2>
+    
+    <p class="lede">Essentials comes with Cozy Studio. Add the others when you want them.</p>
+    
+  </header>
+
+  
+  <div class="about-capabilities about-capabilities--visual-cards" data-count="3" data-mascot-spot="top-end" data-mascot-size="156" data-mascot-mood="wink" data-mascot-pose="wave">
+    
+    <article class="about-capability surface" data-card>
+      
+      
+      
+      
+      <div class="about-capability__copy">
+        <h3>Essentials</h3>
+        <p>100 styles picked from every pack: photography, painting, illustration, anime, 3D, fantasy, games and design.</p>
+        
+      </div>
+      
+      <div class="about-capability__media">
+        <img src="assets/styles/sp00-086.webp" alt="Blind Box Art Toy style sample from Essentials" decoding="async">
+      </div>
+      
+      
+      
+    </article>
+    
+    <article class="about-capability surface" data-card>
+      
+      
+      
+      
+      <div class="about-capability__copy">
+        <h3>Print Registers</h3>
+        <p>21 printmaking styles: plate marks, ink transfer, registration and printed tone.</p>
+        
+      </div>
+      
+      <div class="about-capability__media">
+        <img src="assets/styles/sp20-009.webp" alt="Collagraph Plate style sample from Print Registers" decoding="async">
+      </div>
+      
+      
+      
+    </article>
+    
+    <article class="about-capability surface" data-card>
+      
+      
+      
+      
+      <div class="about-capability__copy">
+        <h3>Paper &amp; Pigment</h3>
+        <p>23 paper and pigment styles: surface behavior, layering and visible marks.</p>
+        
+      </div>
+      
+      <div class="about-capability__media">
+        <img src="assets/styles/sp21-001.webp" alt="Stacked Paper style sample from Paper &amp; Pigment" decoding="async">
+      </div>
+      
+      
+      
+    </article>
+    
+  </div>
+  
+
+  
+  
+  
+  
+</section>
+<section class="stack-panel setup setup--steps" id="setup" aria-labelledby="setup-title">
+  <header class="section-head setup__head">
+    
+    <p class="kicker">Install</p>
+    
+    <h2 id="setup-title">Install from inside Cozy Studio.</h2>
+    
+    <p class="lede">You do not download anything from this site.</p>
+    
+    
+  </header>
+
+  
+
+  
+  <ol class="setup__items" data-count="3">
+    
+    <li class="setup__item surface">
+      <span class="setup__number" aria-hidden="true">1</span>
+      <div class="setup__item-copy">
+        <h3>Start Cozy Studio</h3>
+        <p>Essentials installs by itself the first time.</p>
+        
+        
+      </div>
+    </li>
+    
+    <li class="setup__item surface">
+      <span class="setup__number" aria-hidden="true">2</span>
+      <div class="setup__item-copy">
+        <h3>Open Settings → Styles &amp; workflows</h3>
+        <p>Under Get more packs, open a pack to see its cover and samples, then select Install.</p>
+        
+        
+      </div>
+    </li>
+    
+    <li class="setup__item surface">
+      <span class="setup__number" aria-hidden="true">3</span>
+      <div class="setup__item-copy">
+        <h3>Reload Studio</h3>
+        <p>The new styles show in Create → Catalog. Mix up to five in one image.</p>
+        
+        
+      </div>
+    </li>
+    
+  </ol>
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+<section class="stack-panel faq" id="faq" aria-labelledby="faq-title">
+  
+  <header class="section-head">
+    
+    <p class="kicker">Good to know</p>
+    
+    <h2 id="faq-title" data-mascot-spot="end" data-mascot-size="120" data-mascot-mood="happy" data-mascot-pose="wave">Questions about packs.</h2>
+    
+  </header>
+  
+  <div class="faq-list" data-faq data-faq-exclusive="true">
+    
+    <details
+      class="faq-item is-open"
+      id="faq-do-packs-cost-anything"
+      data-faq-item
+      data-faq-slug="do-packs-cost-anything"
+      name="faq"
+      open
+    >
+      <summary class="faq-item__q" aria-expanded="true" aria-controls="faq-panel-do-packs-cost-anything">
+        <span class="faq-item__n" aria-hidden="true">01</span>
+        <span class="faq-item__ask" id="faq-q-do-packs-cost-anything">Do packs cost anything?</span>
+        <span class="faq-item__mark" aria-hidden="true">
+          <svg class="faq-item__plus" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg>
+          <svg class="faq-item__minus" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/></svg>
+        </span>
+      </summary>
+      <div class="faq-item__body" id="faq-panel-do-packs-cost-anything" role="region" aria-labelledby="faq-q-do-packs-cost-anything">
+        <div class="faq-item__inner">
+          <div class="faq-item__answer">
+            <p>No. The packs and Cozy Studio are free. Making images still goes through your own provider account and its limits.</p>
+          </div>
+        </div>
+      </div>
+    </details>
+    
+    <details
+      class="faq-item"
+      id="faq-what-are-full-quality-cards"
+      data-faq-item
+      data-faq-slug="what-are-full-quality-cards"
+      name="faq"
+      
+    >
+      <summary class="faq-item__q" aria-expanded="false" aria-controls="faq-panel-what-are-full-quality-cards">
+        <span class="faq-item__n" aria-hidden="true">02</span>
+        <span class="faq-item__ask" id="faq-q-what-are-full-quality-cards">What are full-quality cards?</span>
+        <span class="faq-item__mark" aria-hidden="true">
+          <svg class="faq-item__plus" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg>
+          <svg class="faq-item__minus" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/></svg>
+        </span>
+      </summary>
+      <div class="faq-item__body" id="faq-panel-what-are-full-quality-cards" role="region" aria-labelledby="faq-q-what-are-full-quality-cards">
+        <div class="faq-item__inner">
+          <div class="faq-item__answer">
+            <p>Each pack installs with small thumbnails. Tick Full-quality cards when you install a pack to also get its large sample images.</p>
+          </div>
+        </div>
+      </div>
+    </details>
+    
+    <details
+      class="faq-item"
+      id="faq-how-do-updates-work"
+      data-faq-item
+      data-faq-slug="how-do-updates-work"
+      name="faq"
+      
+    >
+      <summary class="faq-item__q" aria-expanded="false" aria-controls="faq-panel-how-do-updates-work">
+        <span class="faq-item__n" aria-hidden="true">03</span>
+        <span class="faq-item__ask" id="faq-q-how-do-updates-work">How do updates work?</span>
+        <span class="faq-item__mark" aria-hidden="true">
+          <svg class="faq-item__plus" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg>
+          <svg class="faq-item__minus" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/></svg>
+        </span>
+      </summary>
+      <div class="faq-item__body" id="faq-panel-how-do-updates-work" role="region" aria-labelledby="faq-q-how-do-updates-work">
+        <div class="faq-item__inner">
+          <div class="faq-item__answer">
+            <p>When a pack gets a new version, Studio offers the update in Settings → Styles &amp; workflows. It checks every download before it replaces the installed pack, and keeps the full cards you already have.</p>
+          </div>
+        </div>
+      </div>
+    </details>
+    
+    <details
+      class="faq-item"
+      id="faq-why-do-some-essentials-styles-disappear"
+      data-faq-item
+      data-faq-slug="why-do-some-essentials-styles-disappear"
+      name="faq"
+      
+    >
+      <summary class="faq-item__q" aria-expanded="false" aria-controls="faq-panel-why-do-some-essentials-styles-disappear">
+        <span class="faq-item__n" aria-hidden="true">04</span>
+        <span class="faq-item__ask" id="faq-q-why-do-some-essentials-styles-disappear">Why do some Essentials styles disappear?</span>
+        <span class="faq-item__mark" aria-hidden="true">
+          <svg class="faq-item__plus" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg>
+          <svg class="faq-item__minus" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/></svg>
+        </span>
+      </summary>
+      <div class="faq-item__body" id="faq-panel-why-do-some-essentials-styles-disappear" role="region" aria-labelledby="faq-q-why-do-some-essentials-styles-disappear">
+        <div class="faq-item__inner">
+          <div class="faq-item__answer">
+            <p>Essentials copies its styles from the full packs. When you install a full pack, Studio hides the matching copies so a style never shows twice.</p>
+          </div>
+        </div>
+      </div>
+    </details>
+    
+    <details
+      class="faq-item"
+      id="faq-can-i-ask-for-a-style-or-report-a-problem"
+      data-faq-item
+      data-faq-slug="can-i-ask-for-a-style-or-report-a-problem"
+      name="faq"
+      
+    >
+      <summary class="faq-item__q" aria-expanded="false" aria-controls="faq-panel-can-i-ask-for-a-style-or-report-a-problem">
+        <span class="faq-item__n" aria-hidden="true">05</span>
+        <span class="faq-item__ask" id="faq-q-can-i-ask-for-a-style-or-report-a-problem">Can I ask for a style or report a problem?</span>
+        <span class="faq-item__mark" aria-hidden="true">
+          <svg class="faq-item__plus" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg>
+          <svg class="faq-item__minus" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/></svg>
+        </span>
+      </summary>
+      <div class="faq-item__body" id="faq-panel-can-i-ask-for-a-style-or-report-a-problem" role="region" aria-labelledby="faq-q-can-i-ask-for-a-style-or-report-a-problem">
+        <div class="faq-item__inner">
+          <div class="faq-item__answer">
+            <p>Yes. Open an issue in the Cozy Studio repository on GitHub.</p>
+          </div>
+        </div>
+      </div>
+    </details>
+    
+  </div>
+  
+  
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Do packs cost anything?","acceptedAnswer":{"@type":"Answer","text":"No. The packs and Cozy Studio are free. Making images still goes through your own provider account and its limits."}},{"@type":"Question","name":"What are full-quality cards?","acceptedAnswer":{"@type":"Answer","text":"Each pack installs with small thumbnails. Tick Full-quality cards when you install a pack to also get its large sample images."}},{"@type":"Question","name":"How do updates work?","acceptedAnswer":{"@type":"Answer","text":"When a pack gets a new version, Studio offers the update in Settings → Styles & workflows. It checks every download before it replaces the installed pack, and keeps the full cards you already have."}},{"@type":"Question","name":"Why do some Essentials styles disappear?","acceptedAnswer":{"@type":"Answer","text":"Essentials copies its styles from the full packs. When you install a full pack, Studio hides the matching copies so a style never shows twice."}},{"@type":"Question","name":"Can I ask for a style or report a problem?","acceptedAnswer":{"@type":"Answer","text":"Yes. Open an issue in the Cozy Studio repository on GitHub."}}]}</script>
+  
+</section>
+<section class="stack-panel closing closing--finale" aria-label="Closing">
+  
+  <div class="closing__wall" aria-hidden="true">
+    <div class="closing__tilt">
+      <div class="closing__plane" data-closing-wall>
+        
+        <img src="assets/styles/sp00-001.webp" alt="" loading="lazy" decoding="async" draggable="false">
+        
+        <img src="assets/styles/sp20-001.webp" alt="" loading="lazy" decoding="async" draggable="false">
+        
+        <img src="assets/styles/sp21-001.webp" alt="" loading="lazy" decoding="async" draggable="false">
+        
+        <img src="assets/styles/sp00-003.webp" alt="" loading="lazy" decoding="async" draggable="false">
+        
+        <img src="assets/styles/sp20-002.webp" alt="" loading="lazy" decoding="async" draggable="false">
+        
+        <img src="assets/styles/sp21-002.webp" alt="" loading="lazy" decoding="async" draggable="false">
+        
+        <img src="assets/styles/sp00-006.webp" alt="" loading="lazy" decoding="async" draggable="false">
+        
+        <img src="assets/styles/sp20-003.webp" alt="" loading="lazy" decoding="async" draggable="false">
+        
+        <img src="assets/styles/sp21-003.webp" alt="" loading="lazy" decoding="async" draggable="false">
+        
+        <img src="assets/styles/sp00-011.webp" alt="" loading="lazy" decoding="async" draggable="false">
+        
+        <img src="assets/styles/sp20-004.webp" alt="" loading="lazy" decoding="async" draggable="false">
+        
+        <img src="assets/styles/sp21-004.webp" alt="" loading="lazy" decoding="async" draggable="false">
+        
+        <img src="assets/styles/sp00-016.webp" alt="" loading="lazy" decoding="async" draggable="false">
+        
+        <img src="assets/styles/sp20-005.webp" alt="" loading="lazy" decoding="async" draggable="false">
+        
+        <img src="assets/styles/sp21-005.webp" alt="" loading="lazy" decoding="async" draggable="false">
+        
+        <img src="assets/styles/sp00-021.webp" alt="" loading="lazy" decoding="async" draggable="false">
+        
+        <img src="assets/styles/sp20-006.webp" alt="" loading="lazy" decoding="async" draggable="false">
+        
+        <img src="assets/styles/sp21-006.webp" alt="" loading="lazy" decoding="async" draggable="false">
+        
+        <img src="assets/styles/sp00-031.webp" alt="" loading="lazy" decoding="async" draggable="false">
+        
+        <img src="assets/styles/sp20-007.webp" alt="" loading="lazy" decoding="async" draggable="false">
+        
+        <img src="assets/styles/sp21-007.webp" alt="" loading="lazy" decoding="async" draggable="false">
+        
+        <img src="assets/styles/sp00-036.webp" alt="" loading="lazy" decoding="async" draggable="false">
+        
+        <img src="assets/styles/sp20-008.webp" alt="" loading="lazy" decoding="async" draggable="false">
+        
+        <img src="assets/styles/sp21-008.webp" alt="" loading="lazy" decoding="async" draggable="false">
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="closing__inner">
+    
+    <p class="closing__text" data-mascot-spot="top-end" data-mascot-size="180" data-mascot-mood="laugh" data-mascot-pose="cheer">Pick a <span class="hero-accent">look.</span></p>
+    
+    
+    <p class="closing__lede">144 styles today, more packs as they are finished.</p>
+    
+    <div class="closing__actions">
+      
+      <a class="button primary closing__cta" href="styles/">Browse every style</a>
+      
+      
+      <a class="button closing__cta" href="https://gvastethecreator.github.io/cozy-studio/">Get Cozy Studio</a>
+      
+    </div>
+  </div>
+<footer class="site-footer">
+  <a class="made-by" href="https://github.com/gvastethecreator">
+    <span class="made-by__ring" aria-hidden="true"></span>
+    <span class="made-by__face">
+      <img class="made-by__avatar" src="https://github.com/gvastethecreator.png" alt="" width="32" height="32" loading="lazy" decoding="async">
+      made by<em class="made-by__name">gvastethecreator</em>
+    </span>
+  </a>
+  
+  <a class="footer-sponsor" href="https://github.com/sponsors/gvastethecreator">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"/>
+    </svg>
+    support this project
+  </a>
+  
+</footer>
+
+</section></main></div><button type="button" class="to-top" aria-label="Back to top"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14"></path><path d="M5 12l7 -7l7 7"></path></svg></button><script>
+      (function () {
+        var requested = new URLSearchParams(location.search).get("frame");
+        if (requested !== "window" && requested !== "full") return;
+        var root = document.documentElement;
+        if (root.getAttribute("data-frame") === requested) return;
+        root.setAttribute("data-frame", requested);
+        if (requested === "window") {
+          var frame = document.createElement("div");
+          var scroll = document.createElement("div");
+          frame.className = "page-frame";
+          scroll.className = "page-frame__scroll";
+          var head = document.querySelector(".site-head");
+          var backdrop = document.querySelector(".site-nav-backdrop");
+          var column = document.querySelector(".column");
+          var top = document.querySelector(".to-top");
+          var skip = document.querySelector("a.skip");
+          if (skip) skip.after(frame);
+          else document.body.append(frame);
+          if (head) frame.append(head);
+          if (backdrop) frame.append(backdrop);
+          frame.append(scroll);
+          if (column) scroll.append(column);
+          if (top) frame.append(top);
+          return;
+        }
+        var box = document.querySelector(".page-frame");
+        var scroller = document.querySelector(".page-frame__scroll");
+        if (!box) return;
+        var parent = box.parentNode;
+        if (scroller) {
+          while (scroller.firstChild) parent.insertBefore(scroller.firstChild, box);
+        }
+        while (box.firstChild) parent.insertBefore(box.firstChild, box);
+        box.remove();
+      })();
+    </script><script src="/cozy-styles/vendor/runtime-loader.js" defer></script></body></html>
