@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "cozy.pack-00",
   "kind": "style-pack",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "studio": ">=0.0.0",
   "title": "Essentials",
   "files": {
@@ -28,408 +28,882 @@
         "SP00-005",
         "SP00-006"
       ],
-      "collections": {}
+      "collections": {
+        "psychological_frontier_aesthetics": {
+          "presetCount": 2,
+          "copiedFromPackCounts": {
+            "pack_24": 2
+          },
+          "imageKeys": [
+            "SP00-096",
+            "SP00-097"
+          ]
+        },
+        "tcg_visual_styles": {
+          "presetCount": 5,
+          "copiedFromPackCounts": {
+            "pack_22": 5
+          },
+          "imageKeys": [
+            "SP00-028",
+            "SP00-029",
+            "SP00-030",
+            "SP00-031",
+            "SP00-032"
+          ]
+        },
+        "medieval_visual_styles": {
+          "presetCount": 3,
+          "copiedFromPackCounts": {
+            "pack_23": 3
+          },
+          "imageKeys": [
+            "SP00-037",
+            "SP00-038",
+            "SP00-039"
+          ]
+        },
+        "portable_visual_studies": {
+          "presetCount": 6,
+          "copiedFromPackCounts": {
+            "pack_19": 2,
+            "pack_20": 2,
+            "pack_21": 2
+          },
+          "imageKeys": [
+            "SP00-090",
+            "SP00-091",
+            "SP00-092",
+            "SP00-093",
+            "SP00-094",
+            "SP00-095"
+          ]
+        },
+        "photography_camera": {
+          "presetCount": 3,
+          "copiedFromPackCounts": {
+            "pack_01": 3
+          },
+          "imageKeys": [
+            "SP00-100",
+            "SP00-003",
+            "SP00-004"
+          ]
+        },
+        "analog_film_process": {
+          "presetCount": 1,
+          "copiedFromPackCounts": {
+            "pack_01": 1
+          },
+          "imageKeys": [
+            "SP00-002"
+          ]
+        },
+        "lighting_optics_atmosphere": {
+          "presetCount": 1,
+          "copiedFromPackCounts": {
+            "pack_01": 1
+          },
+          "imageKeys": [
+            "SP00-001"
+          ]
+        },
+        "cinema_film_genres": {
+          "presetCount": 5,
+          "copiedFromPackCounts": {
+            "pack_02": 3,
+            "pack_27": 2
+          },
+          "imageKeys": [
+            "SP00-005",
+            "SP00-006",
+            "SP00-007",
+            "SP00-098",
+            "SP00-099"
+          ]
+        },
+        "decade_screens": {
+          "presetCount": 2,
+          "copiedFromPackCounts": {
+            "pack_27": 2
+          },
+          "imageKeys": [
+            "SP00-098",
+            "SP00-099"
+          ]
+        },
+        "collectibles_form_languages": {
+          "presetCount": 3,
+          "copiedFromPackCounts": {
+            "pack_28": 3
+          },
+          "imageKeys": [
+            "SP00-084",
+            "SP00-085",
+            "SP00-086"
+          ]
+        },
+        "animation_cartoons": {
+          "presetCount": 2,
+          "copiedFromPackCounts": {
+            "pack_02": 2
+          },
+          "imageKeys": [
+            "SP00-008",
+            "SP00-009"
+          ]
+        },
+        "anime_manga": {
+          "presetCount": 10,
+          "copiedFromPackCounts": {
+            "pack_05": 3,
+            "pack_13": 3,
+            "pack_16": 4
+          },
+          "imageKeys": [
+            "SP00-048",
+            "SP00-049",
+            "SP00-051",
+            "SP00-047",
+            "SP00-050",
+            "SP00-052"
+          ]
+        },
+        "comics_sequential": {
+          "presetCount": 2,
+          "copiedFromPackCounts": {
+            "pack_04": 1,
+            "pack_26": 1
+          },
+          "imageKeys": [
+            "SP00-016",
+            "SP00-060"
+          ]
+        },
+        "illustration_publishing": {
+          "presetCount": 3,
+          "copiedFromPackCounts": {
+            "pack_04": 3
+          },
+          "imageKeys": [
+            "SP00-015",
+            "SP00-017",
+            "SP00-018"
+          ]
+        },
+        "drawing_ink_print": {
+          "presetCount": 3,
+          "copiedFromPackCounts": {
+            "pack_04": 1,
+            "pack_06": 1,
+            "pack_23": 1
+          },
+          "imageKeys": [
+            "SP00-019",
+            "SP00-024",
+            "SP00-037"
+          ]
+        },
+        "painting_traditional": {
+          "presetCount": 6,
+          "copiedFromPackCounts": {
+            "pack_06": 4,
+            "pack_11": 1,
+            "pack_22": 1
+          },
+          "imageKeys": [
+            "SP00-020",
+            "SP00-021",
+            "SP00-022",
+            "SP00-023",
+            "SP00-079",
+            "SP00-030"
+          ]
+        },
+        "digital_concept_art": {
+          "presetCount": 6,
+          "copiedFromPackCounts": {
+            "pack_06": 3,
+            "pack_04": 1,
+            "pack_22": 2
+          },
+          "imageKeys": [
+            "SP00-025",
+            "SP00-026",
+            "SP00-027",
+            "SP00-018",
+            "SP00-028",
+            "SP00-029"
+          ]
+        },
+        "cgi_product_render": {
+          "presetCount": 6,
+          "copiedFromPackCounts": {
+            "pack_03": 5,
+            "pack_28": 1
+          },
+          "imageKeys": [
+            "SP00-010",
+            "SP00-011",
+            "SP00-012",
+            "SP00-013",
+            "SP00-014",
+            "SP00-086"
+          ]
+        },
+        "materials_textures_surfaces": {
+          "presetCount": 3,
+          "copiedFromPackCounts": {
+            "pack_09": 3
+          },
+          "imageKeys": [
+            "SP00-087",
+            "SP00-088",
+            "SP00-089"
+          ]
+        },
+        "patterns_ornament": {
+          "presetCount": 1,
+          "copiedFromPackCounts": {
+            "pack_10": 1
+          },
+          "imageKeys": [
+            "SP00-035"
+          ]
+        },
+        "fashion_costume_wearables": {
+          "presetCount": 3,
+          "copiedFromPackCounts": {
+            "pack_08": 3
+          },
+          "imageKeys": [
+            "SP00-073",
+            "SP00-074",
+            "SP00-075"
+          ]
+        },
+        "architecture_interiors_places": {
+          "presetCount": 2,
+          "copiedFromPackCounts": {
+            "pack_07": 2
+          },
+          "imageKeys": [
+            "SP00-069",
+            "SP00-070"
+          ]
+        },
+        "covers_posters_characters": {
+          "presetCount": 4,
+          "copiedFromPackCounts": {
+            "pack_26": 4
+          },
+          "imageKeys": [
+            "SP00-057",
+            "SP00-058",
+            "SP00-059",
+            "SP00-060"
+          ]
+        },
+        "applied_design_systems": {
+          "presetCount": 4,
+          "copiedFromPackCounts": {
+            "pack_25": 4
+          },
+          "imageKeys": [
+            "SP00-080",
+            "SP00-081",
+            "SP00-082",
+            "SP00-083"
+          ]
+        },
+        "games_ui_worlds": {
+          "presetCount": 5,
+          "copiedFromPackCounts": {
+            "pack_12": 4,
+            "pack_23": 1
+          },
+          "imageKeys": [
+            "SP00-061",
+            "SP00-062",
+            "SP00-063",
+            "SP00-064",
+            "SP00-039"
+          ]
+        },
+        "speculative_architecture_places": {
+          "presetCount": 1,
+          "copiedFromPackCounts": {
+            "pack_07": 1
+          },
+          "imageKeys": [
+            "SP00-071"
+          ]
+        },
+        "myth_folklore_ritual": {
+          "presetCount": 3,
+          "copiedFromPackCounts": {
+            "pack_14": 3
+          },
+          "imageKeys": [
+            "SP00-044",
+            "SP00-045",
+            "SP00-046"
+          ]
+        },
+        "dungeon_dark_fantasy_wargame": {
+          "presetCount": 4,
+          "copiedFromPackCounts": {
+            "pack_17": 4
+          },
+          "imageKeys": [
+            "SP00-040",
+            "SP00-041",
+            "SP00-042",
+            "SP00-043"
+          ]
+        },
+        "punk_alt_futures": {
+          "presetCount": 5,
+          "copiedFromPackCounts": {
+            "pack_15": 4,
+            "pack_11": 1
+          },
+          "imageKeys": [
+            "SP00-065",
+            "SP00-066",
+            "SP00-067",
+            "SP00-068",
+            "SP00-078"
+          ]
+        },
+        "surreal_dream_symbolic": {
+          "presetCount": 3,
+          "copiedFromPackCounts": {
+            "pack_10": 3
+          },
+          "imageKeys": [
+            "SP00-033",
+            "SP00-034",
+            "SP00-036"
+          ]
+        },
+        "toys_craft_food_scale": {
+          "presetCount": 5,
+          "copiedFromPackCounts": {
+            "pack_11": 2,
+            "pack_07": 1,
+            "pack_28": 2
+          },
+          "imageKeys": [
+            "SP00-076",
+            "SP00-077",
+            "SP00-072",
+            "SP00-084",
+            "SP00-085"
+          ]
+        }
+      }
     },
     "copiedFrom": {
       "SP00-001": {
         "packId": "pack_01",
-        "presetId": "SP01-031"
+        "presetId": "SP01-031",
+        "category": "2. Lighting Techniques"
       },
       "SP00-002": {
         "packId": "pack_01",
-        "presetId": "SP01-011"
+        "presetId": "SP01-011",
+        "category": "3. Film And Analog Process"
       },
       "SP00-003": {
         "packId": "pack_01",
-        "presetId": "SP01-046"
+        "presetId": "SP01-046",
+        "category": "4. Documentary And Street"
       },
       "SP00-004": {
         "packId": "pack_01",
-        "presetId": "SP01-050"
+        "presetId": "SP01-050",
+        "category": "5. Commercial And Product"
       },
       "SP00-005": {
         "packId": "pack_02",
-        "presetId": "SP02-001"
+        "presetId": "SP02-001",
+        "category": "1. Film Genres"
       },
       "SP00-006": {
         "packId": "pack_02",
-        "presetId": "SP02-012"
+        "presetId": "SP02-012",
+        "category": "1. Film Genres"
       },
       "SP00-007": {
         "packId": "pack_02",
-        "presetId": "SP02-003"
+        "presetId": "SP02-003",
+        "category": "1. Film Genres"
       },
       "SP00-008": {
         "packId": "pack_02",
-        "presetId": "SP02-032"
+        "presetId": "SP02-032",
+        "category": "14. Painted Frame Animation"
       },
       "SP00-009": {
         "packId": "pack_02",
-        "presetId": "SP02-034"
+        "presetId": "SP02-034",
+        "category": "15. Physical Stop-Frame Animation"
       },
       "SP00-010": {
         "packId": "pack_03",
-        "presetId": "SP03-008"
+        "presetId": "SP03-008",
+        "category": "1. Render Engines"
       },
       "SP00-011": {
         "packId": "pack_03",
-        "presetId": "SP03-015"
+        "presetId": "SP03-015",
+        "category": "4. 3D Styles"
       },
       "SP00-012": {
         "packId": "pack_03",
-        "presetId": "SP03-023"
+        "presetId": "SP03-023",
+        "category": "4. 3D Styles"
       },
       "SP00-013": {
         "packId": "pack_03",
-        "presetId": "SP03-021"
+        "presetId": "SP03-021",
+        "category": "4. 3D Styles"
       },
       "SP00-014": {
         "packId": "pack_03",
-        "presetId": "SP03-065"
+        "presetId": "SP03-065",
+        "category": "4. 3D Styles"
       },
       "SP00-015": {
         "packId": "pack_04",
-        "presetId": "SP04-017"
+        "presetId": "SP04-017",
+        "category": "13. Pigment Storybook Pictures"
       },
       "SP00-016": {
         "packId": "pack_04",
-        "presetId": "SP04-007"
+        "presetId": "SP04-007",
+        "category": "1. Flat and Screen Color Comics"
       },
       "SP00-017": {
         "packId": "pack_04",
-        "presetId": "SP04-031"
+        "presetId": "SP04-031",
+        "category": "3. Editorial And Poster"
       },
       "SP00-018": {
         "packId": "pack_04",
-        "presetId": "SP04-047"
+        "presetId": "SP04-047",
+        "category": "4. Painted Concept Frames"
       },
       "SP00-019": {
         "packId": "pack_04",
-        "presetId": "SP04-063"
+        "presetId": "SP04-063",
+        "category": "5. Ink And Print"
       },
       "SP00-020": {
         "packId": "pack_06",
-        "presetId": "SP06-001"
+        "presetId": "SP06-001",
+        "category": "1. Traditional Painting"
       },
       "SP00-021": {
         "packId": "pack_06",
-        "presetId": "SP06-002"
+        "presetId": "SP06-002",
+        "category": "1. Traditional Painting"
       },
       "SP00-022": {
         "packId": "pack_06",
-        "presetId": "SP06-009"
+        "presetId": "SP06-009",
+        "category": "1. Traditional Painting"
       },
       "SP00-023": {
         "packId": "pack_06",
-        "presetId": "SP06-008"
+        "presetId": "SP06-008",
+        "category": "1. Traditional Painting"
       },
       "SP00-024": {
         "packId": "pack_06",
-        "presetId": "SP06-017"
+        "presetId": "SP06-017",
+        "category": "2. Drawing & Sketching"
       },
       "SP00-025": {
         "packId": "pack_06",
-        "presetId": "SP06-046"
+        "presetId": "SP06-046",
+        "category": "4. Digital Art"
       },
       "SP00-026": {
         "packId": "pack_06",
-        "presetId": "SP06-050"
+        "presetId": "SP06-050",
+        "category": "4. Digital Art"
       },
       "SP00-027": {
         "packId": "pack_06",
-        "presetId": "SP06-049"
+        "presetId": "SP06-049",
+        "category": "4. Digital Art"
       },
       "SP00-028": {
         "packId": "pack_22",
-        "presetId": "SP22-110"
+        "presetId": "SP22-110",
+        "category": "2. Epic Digital Painting"
       },
       "SP00-029": {
         "packId": "pack_22",
-        "presetId": "SP22-116"
+        "presetId": "SP22-116",
+        "category": "2. Epic Digital Painting"
       },
       "SP00-030": {
         "packId": "pack_22",
-        "presetId": "SP22-222"
+        "presetId": "SP22-222",
+        "category": "1. Workshop Painting"
       },
       "SP00-031": {
         "packId": "pack_22",
-        "presetId": "SP22-211"
+        "presetId": "SP22-211",
+        "category": "14. Symbolic Graphic Illustration"
       },
       "SP00-032": {
         "packId": "pack_22",
-        "presetId": "SP22-354"
+        "presetId": "SP22-354",
+        "category": "12. Crafted Materials & Miniatures"
       },
       "SP00-033": {
         "packId": "pack_10",
-        "presetId": "SP10-031"
+        "presetId": "SP10-031",
+        "category": "4. Surrealism & Dream"
       },
       "SP00-034": {
         "packId": "pack_10",
-        "presetId": "SP10-038"
+        "presetId": "SP10-038",
+        "category": "4. Surrealism & Dream"
       },
       "SP00-035": {
         "packId": "pack_10",
-        "presetId": "SP10-074"
+        "presetId": "SP10-074",
+        "category": "8. Point, Mosaic And Glass Systems"
       },
       "SP00-036": {
         "packId": "pack_10",
-        "presetId": "SP10-033"
+        "presetId": "SP10-033",
+        "category": "4. Surrealism & Dream"
       },
       "SP00-037": {
         "packId": "pack_23",
-        "presetId": "SP23-003"
+        "presetId": "SP23-003",
+        "category": "1. Manuscript Visual Systems"
       },
       "SP00-038": {
         "packId": "pack_23",
-        "presetId": "SP23-023"
+        "presetId": "SP23-023",
+        "category": "5. Revival & Storybook Illustration"
       },
       "SP00-039": {
         "packId": "pack_23",
-        "presetId": "SP23-213"
+        "presetId": "SP23-213",
+        "category": "11. Modern Visual Techniques"
       },
       "SP00-040": {
         "packId": "pack_17",
-        "presetId": "SP17-160"
+        "presetId": "SP17-160",
+        "category": "7. Pulp Fantasy Paintings"
       },
       "SP00-041": {
         "packId": "pack_17",
-        "presetId": "SP17-007"
+        "presetId": "SP17-007",
+        "category": "1. Matte Dark Fantasy Illustrations"
       },
       "SP00-042": {
         "packId": "pack_17",
-        "presetId": "SP17-038"
+        "presetId": "SP17-038",
+        "category": "13. Bestiary and Manuscript Plates"
       },
       "SP00-043": {
         "packId": "pack_17",
-        "presetId": "SP17-240"
+        "presetId": "SP17-240",
+        "category": "22. Watercolor Dark Fantasy Pictures"
       },
       "SP00-044": {
         "packId": "pack_14",
-        "presetId": "SP14-340"
+        "presetId": "SP14-340",
+        "category": "Tricksters & Shape-Shifters"
       },
       "SP00-045": {
         "packId": "pack_14",
-        "presetId": "SP14-380"
+        "presetId": "SP14-380",
+        "category": "Sea Monsters & Water Spirits"
       },
       "SP00-046": {
         "packId": "pack_14",
-        "presetId": "SP14-410"
+        "presetId": "SP14-410",
+        "category": "Creation, World Trees & Cosmos"
       },
       "SP00-047": {
         "packId": "pack_13",
-        "presetId": "SP13-064"
+        "presetId": "SP13-064",
+        "category": "2. Slice Of Life, School And Music"
       },
       "SP00-048": {
         "packId": "pack_05",
-        "presetId": "SP05-140"
+        "presetId": "SP05-140",
+        "category": "1. Shonen Screen Frames"
       },
       "SP00-049": {
         "packId": "pack_05",
-        "presetId": "SP05-051"
+        "presetId": "SP05-051",
+        "category": "2. Mecha & Cyberpunk"
       },
       "SP00-050": {
         "packId": "pack_13",
-        "presetId": "SP13-058"
+        "presetId": "SP13-058",
+        "category": "2. Slice Of Life, School And Music"
       },
       "SP00-051": {
         "packId": "pack_05",
-        "presetId": "SP05-273"
+        "presetId": "SP05-273",
+        "category": "4. Dark Fantasy & Seinen"
       },
       "SP00-052": {
         "packId": "pack_13",
-        "presetId": "SP05-342"
+        "presetId": "SP05-342",
+        "category": "8. Cel Direction and Screen"
       },
       "SP00-053": {
         "packId": "pack_16",
-        "presetId": "SP05-014"
+        "presetId": "SP05-014",
+        "category": "2. 90s Golden Era"
       },
       "SP00-054": {
         "packId": "pack_16",
-        "presetId": "SP05-079"
+        "presetId": "SP05-079",
+        "category": "4. Studio Masterpieces"
       },
       "SP00-055": {
         "packId": "pack_16",
-        "presetId": "SP05-078"
+        "presetId": "SP05-078",
+        "category": "4. Studio Masterpieces"
       },
       "SP00-056": {
         "packId": "pack_16",
-        "presetId": "SP13-087"
+        "presetId": "SP13-087",
+        "category": "7. Horror"
       },
       "SP00-057": {
         "packId": "pack_26",
-        "presetId": "SP26-023"
+        "presetId": "SP26-023",
+        "category": "2. Movie Posters"
       },
       "SP00-058": {
         "packId": "pack_26",
-        "presetId": "SP26-011"
+        "presetId": "SP26-011",
+        "category": "12. Sketchbook Character Studies"
       },
       "SP00-059": {
         "packId": "pack_26",
-        "presetId": "SP26-024"
+        "presetId": "SP26-024",
+        "category": "2. Movie Posters"
       },
       "SP00-060": {
         "packId": "pack_26",
-        "presetId": "SP26-153"
+        "presetId": "SP26-153",
+        "category": "8. Comic Artists - Pages & Panels"
       },
       "SP00-061": {
         "packId": "pack_12",
-        "presetId": "SP12-070"
+        "presetId": "SP12-070",
+        "category": "2. Arcane Temples & Mythic Realms"
       },
       "SP00-062": {
         "packId": "pack_12",
-        "presetId": "SP12-116"
+        "presetId": "SP12-116",
+        "category": "2. Arcane Temples & Mythic Realms"
       },
       "SP00-063": {
         "packId": "pack_12",
-        "presetId": "SP12-012"
+        "presetId": "SP12-012",
+        "category": "8. Puzzle Chambers & Adventure Setpieces"
       },
       "SP00-064": {
         "packId": "pack_12",
-        "presetId": "SP12-168"
+        "presetId": "SP12-168",
+        "category": "7. Heists, Horror & Underworld Runs"
       },
       "SP00-065": {
         "packId": "pack_15",
-        "presetId": "SP15-081"
+        "presetId": "SP15-081",
+        "category": "1. Classic Industrial Punks"
       },
       "SP00-066": {
         "packId": "pack_15",
-        "presetId": "SP15-084"
+        "presetId": "SP15-084",
+        "category": "2. Neon, Net & Signal Punks"
       },
       "SP00-067": {
         "packId": "pack_15",
-        "presetId": "SP15-145"
+        "presetId": "SP15-145",
+        "category": "2. Neon, Net & Signal Punks"
       },
       "SP00-068": {
         "packId": "pack_15",
-        "presetId": "SP15-108"
+        "presetId": "SP15-108",
+        "category": "7. Media, Vapor & Glitch Punks"
       },
       "SP00-069": {
         "packId": "pack_07",
-        "presetId": "SP07-003"
+        "presetId": "SP07-003",
+        "category": "1. Interior Design Systems"
       },
       "SP00-070": {
         "packId": "pack_07",
-        "presetId": "SP07-007"
+        "presetId": "SP07-007",
+        "category": "2. Architectural Movements And Vernaculars"
       },
       "SP00-071": {
         "packId": "pack_07",
-        "presetId": "SP07-051"
+        "presetId": "SP07-051",
+        "category": "5. Fantasy And Mythic Architecture"
       },
       "SP00-072": {
         "packId": "pack_07",
-        "presetId": "SP07-126"
+        "presetId": "SP07-126",
+        "category": "6. Toy Craft And Miniature Architecture"
       },
       "SP00-073": {
         "packId": "pack_08",
-        "presetId": "SP08-001"
+        "presetId": "SP08-001",
+        "category": "1. Contemporary Fashion"
       },
       "SP00-074": {
         "packId": "pack_08",
-        "presetId": "SP08-011"
+        "presetId": "SP08-011",
+        "category": "3. Historical & Fantasy"
       },
       "SP00-075": {
         "packId": "pack_08",
-        "presetId": "SP08-013"
+        "presetId": "SP08-013",
+        "category": "4. Fantasy Sci-Fi Costume"
       },
       "SP00-076": {
         "packId": "pack_11",
-        "presetId": "SP11-005"
+        "presetId": "SP11-005",
+        "category": "1. Toys And Crafts"
       },
       "SP00-077": {
         "packId": "pack_11",
-        "presetId": "SP11-018"
+        "presetId": "SP11-018",
+        "category": "1. Toys And Crafts"
       },
       "SP00-078": {
         "packId": "pack_11",
-        "presetId": "SP11-012"
+        "presetId": "SP11-012",
+        "category": "3. Aesthetics"
       },
       "SP00-079": {
         "packId": "pack_11",
-        "presetId": "SP11-007"
+        "presetId": "SP11-007",
+        "category": "2. Artistic Mediums"
       },
       "SP00-080": {
         "packId": "pack_25",
-        "presetId": "SP25-101"
+        "presetId": "SP25-101",
+        "category": "6. Industrial & Product Design"
       },
       "SP00-081": {
         "packId": "pack_25",
-        "presetId": "SP25-042"
+        "presetId": "SP25-042",
+        "category": "3. App & Illustrative Icons"
       },
       "SP00-082": {
         "packId": "pack_25",
-        "presetId": "SP25-165"
+        "presetId": "SP25-165",
+        "category": "9. Advertising & Campaign Design"
       },
       "SP00-083": {
         "packId": "pack_25",
-        "presetId": "SP25-242"
+        "presetId": "SP25-242",
+        "category": "13. Surface & Textile Design"
       },
       "SP00-084": {
         "packId": "pack_28",
-        "presetId": "SP28-022"
+        "presetId": "SP28-022",
+        "category": "2. Toys & Miniatures"
       },
       "SP00-085": {
         "packId": "pack_28",
-        "presetId": "SP28-024"
+        "presetId": "SP28-024",
+        "category": "2. Toys & Miniatures"
       },
       "SP00-086": {
         "packId": "pack_28",
-        "presetId": "SP28-065"
+        "presetId": "SP28-065",
+        "category": "4. Industrial Form Languages"
       },
       "SP00-087": {
         "packId": "pack_09",
-        "presetId": "SP09-051"
+        "presetId": "SP09-051",
+        "category": "5. Elemental And FX"
       },
       "SP00-088": {
         "packId": "pack_09",
-        "presetId": "SP09-107"
+        "presetId": "SP09-107",
+        "category": "5. Elemental And FX"
       },
       "SP00-089": {
         "packId": "pack_09",
-        "presetId": "SP09-022"
+        "presetId": "SP09-022",
+        "category": "2. Man-Made Materials"
       },
       "SP00-090": {
         "packId": "pack_19",
-        "presetId": "SP19-012"
+        "presetId": "SP19-012",
+        "category": "1. Ink Structures"
       },
       "SP00-091": {
         "packId": "pack_19",
-        "presetId": "SP19-014"
+        "presetId": "SP19-014",
+        "category": "1. Ink Structures"
       },
       "SP00-092": {
         "packId": "pack_20",
-        "presetId": "SP20-002"
+        "presetId": "SP20-002",
+        "category": "1. Print Registers"
       },
       "SP00-093": {
         "packId": "pack_20",
-        "presetId": "SP20-004"
+        "presetId": "SP20-004",
+        "category": "1. Print Registers"
       },
       "SP00-094": {
         "packId": "pack_21",
-        "presetId": "SP21-001"
+        "presetId": "SP21-001",
+        "category": "1. Paper & Pigment"
       },
       "SP00-095": {
         "packId": "pack_21",
-        "presetId": "SP21-003"
+        "presetId": "SP21-003",
+        "category": "1. Paper & Pigment"
       },
       "SP00-096": {
         "packId": "pack_24",
-        "presetId": "SP24-015"
+        "presetId": "SP24-015",
+        "category": "1. Psychological Horror Aesthetics"
       },
       "SP00-097": {
         "packId": "pack_24",
-        "presetId": "SP24-027"
+        "presetId": "SP24-027",
+        "category": "2. Tactical & Solitary Frontiers"
       },
       "SP00-098": {
         "packId": "pack_27",
-        "presetId": "SP27-001"
+        "presetId": "SP27-001",
+        "category": "1. Horror Cinema 70s"
       },
       "SP00-099": {
         "packId": "pack_27",
-        "presetId": "SP27-013"
+        "presetId": "SP27-013",
+        "category": "1. Horror Cinema 70s"
       },
       "SP00-100": {
         "packId": "pack_01",
-        "presetId": "SP01-001"
+        "presetId": "SP01-001",
+        "category": "1. Portrait And Studio"
       }
     }
   },
